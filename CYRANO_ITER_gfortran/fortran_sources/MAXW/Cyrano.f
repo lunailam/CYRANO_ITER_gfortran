@@ -80,7 +80,6 @@ cccccccccccccccccc ERNESTO cccccccccccccccccccccccc
 	integer :: resp
 	character(120) :: dummychar
 	integer :: OpenStat
-      real :: aux
 ccccccccccccccccccccccccccccccccccccccccccccccccccc
 
       logical unmame, yes, use_outpow
@@ -90,7 +89,7 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccc
      ;, lres
      ;, ith, lbl2, nrhss
      ;, nsum, i1st, isrchfge, ioerr
-     ;, idum, arq
+     ;, idum
      ;, run_index
 c     ;, ceilq, nwr
 
@@ -125,7 +124,7 @@ c                          other inputs are in MKSA units.
       sqrtpi = dsqrt(pi)
       oopi = 1.d0 / pi
       twopi = 2.d0 * pi
-      aux = 0
+ 
 ccccccccccccccccccccc Begin Cyrano  ccccccccccccccccccccccccc
 
 	print *, '       CYRANO'
@@ -1756,8 +1755,7 @@ c	  call beepqq(1000,200)
           write(605,*), '---------------> (CYRANO.f) Cyrano FINISHED!'
 	  write(605,*), '                  Total time used:', tempo, 'sec'
 	  write(605,*)
-      open (arq, FILE = 'resultado.dat')
-      write (arq,*)'Tempo powabs = ',aux
+
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
           close(605)

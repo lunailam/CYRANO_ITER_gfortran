@@ -1,0 +1,4 @@
+ldd: warning: you do not have execution permission for `./Cyrano'
+	not a dynamic executable
+slurmd[nova103]: execve(): ./Cyrano: Permission denied
+srun: error: nova103: task 0: Exited with exit code 13

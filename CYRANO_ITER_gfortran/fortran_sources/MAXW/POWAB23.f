@@ -37,20 +37,13 @@ c     Does not deal with general dielectric response!
      ;  fa(14,2*maxpom-1), kpar(2*maxpom-1), ketan(maxpom), tr
      ;, xmu(-2:6), ex(-2:6), omc, coeff, coef1, coef2, small, dam2, ntni
      ;, cabs2, drpc, aux, myfa(2*maxpom-1), myfa2(2*maxpom-1)
-	    ;, second
 
       complex*16 
      ;  pmder(15,maxpom), zdotc, zdotu, tra(15)
      ;, ks(3,3), efield(3), ytra(3), zzz, z1, z2, mypmder(maxpom)
 c	 ;, omcol
-	  
-ccccccccccccccccccc variável tempo cccccccccccccccccccccccccccccc
-	real :: T1(2)	          !   Variables for evaluating
-	real :: tempo             !   the elapsed CPU time
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-	  
-	  
-      external inscr, zdotc, zdotu, second
+
+      external inscr, zdotc, zdotu
 
       cabs2(zzz) = dreal(zzz*dconjg(zzz))
 	drpc(z1, z2) = dreal(z1 * dconjg(z2))

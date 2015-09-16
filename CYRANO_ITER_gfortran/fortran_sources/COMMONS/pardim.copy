@@ -36,7 +36,7 @@ c     Here pocket case:
      ;  , nppres = 21
      ;  , nptosp = 100
      ;  , nplmtr = 32+1
-     ;  , maxnex = 10, maxnev=10, maxrdr=2
+     ;  , maxnex = 3, maxnev=1, maxrdr=2
      ;  , maxxre=4, maxvre=3
      ;)
      

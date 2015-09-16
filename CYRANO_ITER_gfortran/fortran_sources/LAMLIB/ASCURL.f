@@ -57,7 +57,10 @@ c     ;, v, totop
       integer
      ;  ir, jr, lr, lc, itr, itc
       
-      double precision cabs1, rle, second, rea
+      double precision 
+     ;  cabs1, rle
+     ;, second
+     ;, rea
 
       complex*16 zdum
 

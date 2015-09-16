@@ -347,7 +347,7 @@ c		for dirty passing to powabs; intabp is passed as a plot point index:
 		phi = polplo(ipol)
 c write contrib of general diel. response and output for next step of qlfp
 c elsewhere!!!
-		call powabs(i, onespe, ispe, .false., temp_total)
+		call powabs(i, onespe, ispe, .false.)
 c		tab(,,1) to give absorption to order 0 in lr;
 c		tab(,,2) to give absorption up to 2nd order in lr
 

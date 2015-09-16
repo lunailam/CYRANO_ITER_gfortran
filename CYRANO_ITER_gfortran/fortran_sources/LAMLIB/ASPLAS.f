@@ -84,7 +84,10 @@ ccccccccccccccccccc VARIABLES (cokpco) cccccccccccccccccccccccccccccc
 
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-      double precision cabs1, rle, second, rm
+      double precision 
+     ;  cabs1, rle
+     ;, second
+     ;, rm
 
       complex*16 zdum
 

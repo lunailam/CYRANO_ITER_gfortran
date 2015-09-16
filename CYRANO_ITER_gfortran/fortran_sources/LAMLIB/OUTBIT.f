@@ -45,7 +45,9 @@ c     Also writes output for QLFP
       double precision 
      ;  jthwa(maxthp+1,2), jphwa(maxthp+1,2), absmon(maxpom)
      ;, wallos, norfac(3)
-     ;, cabs2, rveno, trapeze, gauss, second
+     ;, cabs2, rveno
+     ;, trapeze, gauss
+     ;, second
  
       complex*16
      ;  c1

@@ -1,0 +1,388 @@
+        CYRANO
+        ======
+
+ SHOT number   =           0
+ N.flux surf.  =           0
+ instant(s)    =   0.0000000000000000     
+
+ Rgeo(m)       =   0.0000000000000000     
+ Zgeo(m)       =   0.0000000000000000     
+ Raxis(m)      =   8.5000000000000000     
+ Zaxis(m)      =   0.0000000000000000     
+ r_p(m)        =   2.8300000000000001     
+ r_wall(m)     =   3.2000000000000002     
+ ShafShift(m)  =  0.20000000000000001     
+
+ Ip(MA)        =   15.000000000000000     
+ Bo(T)         =   5.7400000000000002     
+ P_icrh(MW)    =  0.81999999999999995     
+ f_icrh(MHz)   =   52.000000000000000     
+ ne_0(1e19/m3) =   10.000000000000000     
+ ne_b(1e19/m3) =  0.50000000000000000     
+ Te_0(keV)     =   50.000000000000000     
+ Te_b(keV)     =   5.0000000000000003E-002
+
+ Enter TABLES
+ i=         950 : bmin and bmax at theta=   0.0000000000000000          3.0986411915289951      ; imi, ima:           1         506  (first occurence)
+ Enter OUTGRID
+ Enter OUTTAB
+ Exit  TABLES
+
+ Enter FILANT
+ Exit  FILANT
+
+ Enter ANJUMP
+ Exit  ANJUMP
+
+ --> Enter GENERA3 (gensys = T)
+
+     element#   1 ( node radius = 0.1389E-02 )
+
+ *** WARNING  ERROR 1 from DL2CCG.  The matrix is algorithmically singular. 
+ ***          An estimate of the reciprocal of its L1 condition number is 
+ ***          RCOND = 1.977071576712694D-25.
+     element#   2 ( node radius = 0.2103E-01 )
+     element#   3 ( node radius = 0.3583E-01 )
+     element#   4 ( node radius = 0.5063E-01 )
+     element#   5 ( node radius = 0.6543E-01 )
+     element#   6 ( node radius = 0.8023E-01 )
+     element#   7 ( node radius = 0.9503E-01 )
+     element#   8 ( node radius = 0.1098     )
+     element#   9 ( node radius = 0.1246     )
+     element#  10 ( node radius = 0.1394     )
+     element#  11 ( node radius = 0.1542     )
+     element#  12 ( node radius = 0.1690     )
+     element#  13 ( node radius = 0.1838     )
+     element#  14 ( node radius = 0.1986     )
+     element#  15 ( node radius = 0.2134     )
+     element#  16 ( node radius = 0.2282     )
+     element#  17 ( node radius = 0.2430     )
+     element#  18 ( node radius = 0.2578     )
+     element#  19 ( node radius = 0.2726     )
+     element#  20 ( node radius = 0.2874     )
+     element#  21 ( node radius = 0.3022     )
+     element#  22 ( node radius = 0.3170     )
+     element#  23 ( node radius = 0.3318     )
+     element#  24 ( node radius = 0.3466     )
+     element#  25 ( node radius = 0.3614     )
+     element#  26 ( node radius = 0.3762     )
+     element#  27 ( node radius = 0.3910     )
+     element#  28 ( node radius = 0.4058     )
+     element#  29 ( node radius = 0.4206     )
+     element#  30 ( node radius = 0.4354     )
+     element#  31 ( node radius = 0.4502     )
+     element#  32 ( node radius = 0.4650     )
+     element#  33 ( node radius = 0.4798     )
+     element#  34 ( node radius = 0.4946     )
+     element#  35 ( node radius = 0.5094     )
+     element#  36 ( node radius = 0.5242     )
+     element#  37 ( node radius = 0.5390     )
+     element#  38 ( node radius = 0.5538     )
+     element#  39 ( node radius = 0.5686     )
+     element#  40 ( node radius = 0.5834     )
+     element#  41 ( node radius = 0.5982     )
+     element#  42 ( node radius = 0.6130     )
+     element#  43 ( node radius = 0.6278     )
+     element#  44 ( node radius = 0.6426     )
+     element#  45 ( node radius = 0.6574     )
+     element#  46 ( node radius = 0.6722     )
+     element#  47 ( node radius = 0.6870     )
+     element#  48 ( node radius = 0.7018     )
+     element#  49 ( node radius = 0.7166     )
+     element#  50 ( node radius = 0.7314     )
+     element#  51 ( node radius = 0.7462     )
+     element#  52 ( node radius = 0.7610     )
+     element#  53 ( node radius = 0.7758     )
+     element#  54 ( node radius = 0.7906     )
+     element#  55 ( node radius = 0.8054     )
+     element#  56 ( node radius = 0.8202     )
+     element#  57 ( node radius = 0.8350     )
+     element#  58 ( node radius = 0.8498     )
+     element#  59 ( node radius = 0.8646     )
+     element#  60 ( node radius = 0.8794     )
+     element#  61 ( node radius = 0.8942     )
+     element#  62 ( node radius = 0.9090     )
+     element#  63 ( node radius = 0.9238     )
+     element#  64 ( node radius = 0.9386     )
+     element#  65 ( node radius = 0.9534     )
+     element#  66 ( node radius = 0.9682     )
+     element#  67 ( node radius = 0.9830     )
+     element#  68 ( node radius = 0.9978     )
+     element#  69 ( node radius =  1.013     )
+     element#  70 ( node radius =  1.027     )
+     element#  71 ( node radius =  1.042     )
+     element#  72 ( node radius =  1.057     )
+     element#  73 ( node radius =  1.072     )
+     element#  74 ( node radius =  1.087     )
+     element#  75 ( node radius =  1.101     )
+     element#  76 ( node radius =  1.116     )
+     element#  77 ( node radius =  1.131     )
+     element#  78 ( node radius =  1.146     )
+     element#  79 ( node radius =  1.161     )
+     element#  80 ( node radius =  1.175     )
+     element#  81 ( node radius =  1.190     )
+     element#  82 ( node radius =  1.205     )
+     element#  83 ( node radius =  1.220     )
+     element#  84 ( node radius =  1.235     )
+     element#  85 ( node radius =  1.249     )
+     element#  86 ( node radius =  1.264     )
+     element#  87 ( node radius =  1.279     )
+     element#  88 ( node radius =  1.294     )
+     element#  89 ( node radius =  1.309     )
+     element#  90 ( node radius =  1.323     )
+     element#  91 ( node radius =  1.338     )
+     element#  92 ( node radius =  1.353     )
+     element#  93 ( node radius =  1.368     )
+     element#  94 ( node radius =  1.383     )
+     element#  95 ( node radius =  1.397     )
+     element#  96 ( node radius =  1.412     )
+     element#  97 ( node radius =  1.427     )
+     element#  98 ( node radius =  1.442     )
+     element#  99 ( node radius =  1.457     )
+     element# 100 ( node radius =  1.471     )
+     element# 101 ( node radius =  1.486     )
+     element# 102 ( node radius =  1.501     )
+     element# 103 ( node radius =  1.514     )
+     element# 104 ( node radius =  1.528     )
+     element# 105 ( node radius =  1.541     )
+     element# 106 ( node radius =  1.554     )
+     element# 107 ( node radius =  1.567     )
+     element# 108 ( node radius =  1.581     )
+     element# 109 ( node radius =  1.594     )
+     element# 110 ( node radius =  1.607     )
+     element# 111 ( node radius =  1.621     )
+     element# 112 ( node radius =  1.634     )
+     element# 113 ( node radius =  1.647     )
+     element# 114 ( node radius =  1.661     )
+     element# 115 ( node radius =  1.674     )
+     element# 116 ( node radius =  1.687     )
+     element# 117 ( node radius =  1.700     )
+     element# 118 ( node radius =  1.714     )
+     element# 119 ( node radius =  1.727     )
+     element# 120 ( node radius =  1.740     )
+     element# 121 ( node radius =  1.754     )
+     element# 122 ( node radius =  1.767     )
+     element# 123 ( node radius =  1.780     )
+     element# 124 ( node radius =  1.794     )
+     element# 125 ( node radius =  1.807     )
+     element# 126 ( node radius =  1.820     )
+     element# 127 ( node radius =  1.833     )
+     element# 128 ( node radius =  1.847     )
+     element# 129 ( node radius =  1.860     )
+     element# 130 ( node radius =  1.873     )
+     element# 131 ( node radius =  1.887     )
+     element# 132 ( node radius =  1.900     )
+     element# 133 ( node radius =  1.913     )
+     element# 134 ( node radius =  1.927     )
+     element# 135 ( node radius =  1.940     )
+     element# 136 ( node radius =  1.953     )
+     element# 137 ( node radius =  1.966     )
+     element# 138 ( node radius =  1.980     )
+     element# 139 ( node radius =  1.993     )
+     element# 140 ( node radius =  2.006     )
+     element# 141 ( node radius =  2.020     )
+     element# 142 ( node radius =  2.033     )
+     element# 143 ( node radius =  2.046     )
+     element# 144 ( node radius =  2.060     )
+     element# 145 ( node radius =  2.073     )
+     element# 146 ( node radius =  2.086     )
+     element# 147 ( node radius =  2.099     )
+     element# 148 ( node radius =  2.113     )
+     element# 149 ( node radius =  2.126     )
+     element# 150 ( node radius =  2.139     )
+     element# 151 ( node radius =  2.153     )
+     element# 152 ( node radius =  2.166     )
+     element# 153 ( node radius =  2.179     )
+     element# 154 ( node radius =  2.193     )
+     element# 155 ( node radius =  2.206     )
+     element# 156 ( node radius =  2.219     )
+     element# 157 ( node radius =  2.232     )
+     element# 158 ( node radius =  2.246     )
+     element# 159 ( node radius =  2.259     )
+     element# 160 ( node radius =  2.272     )
+     element# 161 ( node radius =  2.286     )
+     element# 162 ( node radius =  2.299     )
+     element# 163 ( node radius =  2.312     )
+     element# 164 ( node radius =  2.326     )
+     element# 165 ( node radius =  2.339     )
+     element# 166 ( node radius =  2.352     )
+     element# 167 ( node radius =  2.365     )
+     element# 168 ( node radius =  2.379     )
+     element# 169 ( node radius =  2.392     )
+     element# 170 ( node radius =  2.405     )
+     element# 171 ( node radius =  2.419     )
+     element# 172 ( node radius =  2.432     )
+     element# 173 ( node radius =  2.445     )
+     element# 174 ( node radius =  2.459     )
+     element# 175 ( node radius =  2.472     )
+     element# 176 ( node radius =  2.485     )
+     element# 177 ( node radius =  2.498     )
+     element# 178 ( node radius =  2.512     )
+     element# 179 ( node radius =  2.525     )
+     element# 180 ( node radius =  2.538     )
+     element# 181 ( node radius =  2.552     )
+     element# 182 ( node radius =  2.565     )
+     element# 183 ( node radius =  2.578     )
+     element# 184 ( node radius =  2.592     )
+     element# 185 ( node radius =  2.605     )
+     element# 186 ( node radius =  2.618     )
+     element# 187 ( node radius =  2.631     )
+     element# 188 ( node radius =  2.645     )
+     element# 189 ( node radius =  2.658     )
+     element# 190 ( node radius =  2.671     )
+     element# 191 ( node radius =  2.685     )
+     element# 192 ( node radius =  2.698     )
+     element# 193 ( node radius =  2.711     )
+     element# 194 ( node radius =  2.725     )
+     element# 195 ( node radius =  2.738     )
+     element# 196 ( node radius =  2.751     )
+     element# 197 ( node radius =  2.764     )
+     element# 198 ( node radius =  2.778     )
+     element# 199 ( node radius =  2.791     )
+     element# 200 ( node radius =  2.804     )
+     element# 201 ( node radius =  2.818     )
+ Enter REGJUM
+ Exit REGJUM
+
+ *** WARNING  ERROR 1 from DL2CCG.  The matrix is algorithmically singular. 
+ ***          An estimate of the reciprocal of its L1 condition number is 
+ ***          RCOND = 4.507497501621420D-23.
+     element# 202 ( node radius =  2.830     )
+ curl.curl: number of coefficients =           38
+     element# 203 ( node radius =  2.835     )
+     element# 204 ( node radius =  2.839     )
+     element# 205 ( node radius =  2.843     )
+     element# 206 ( node radius =  2.847     )
+     element# 207 ( node radius =  2.852     )
+     element# 208 ( node radius =  2.856     )
+     element# 209 ( node radius =  2.860     )
+     element# 210 ( node radius =  2.864     )
+     element# 211 ( node radius =  2.869     )
+     element# 212 ( node radius =  2.873     )
+     element# 213 ( node radius =  2.877     )
+     element# 214 ( node radius =  2.881     )
+     element# 215 ( node radius =  2.886     )
+     element# 216 ( node radius =  2.890     )
+     element# 217 ( node radius =  2.894     )
+     element# 218 ( node radius =  2.898     )
+     element# 219 ( node radius =  2.903     )
+     element# 220 ( node radius =  2.907     )
+     element# 221 ( node radius =  2.911     )
+     element# 222 ( node radius =  2.915     )
+     element# 223 ( node radius =  2.920     )
+     element# 224 ( node radius =  2.924     )
+     element# 225 ( node radius =  2.928     )
+     element# 226 ( node radius =  2.932     )
+     element# 227 ( node radius =  2.937     )
+     element# 228 ( node radius =  2.941     )
+     element# 229 ( node radius =  2.945     )
+     element# 230 ( node radius =  2.949     )
+     element# 231 ( node radius =  2.954     )
+     element# 232 ( node radius =  2.958     )
+     element# 233 ( node radius =  2.962     )
+     element# 234 ( node radius =  2.966     )
+     element# 235 ( node radius =  2.971     )
+     element# 236 ( node radius =  2.975     )
+     element# 237 ( node radius =  2.979     )
+     element# 238 ( node radius =  2.983     )
+     element# 239 ( node radius =  2.988     )
+     element# 240 ( node radius =  2.992     )
+     element# 241 ( node radius =  2.996     )
+ Enter REGJUM
+ Exit REGJUM
+     element# 242 ( node radius =  3.000     )
+     element# 243 ( node radius =  3.005     )
+     element# 244 ( node radius =  3.010     )
+     element# 245 ( node radius =  3.015     )
+     element# 246 ( node radius =  3.020     )
+     element# 247 ( node radius =  3.025     )
+     element# 248 ( node radius =  3.030     )
+     element# 249 ( node radius =  3.035     )
+     element# 250 ( node radius =  3.040     )
+     element# 251 ( node radius =  3.045     )
+     element# 252 ( node radius =  3.050     )
+     element# 253 ( node radius =  3.055     )
+     element# 254 ( node radius =  3.060     )
+     element# 255 ( node radius =  3.065     )
+     element# 256 ( node radius =  3.070     )
+     element# 257 ( node radius =  3.075     )
+     element# 258 ( node radius =  3.080     )
+     element# 259 ( node radius =  3.085     )
+     element# 260 ( node radius =  3.090     )
+     element# 261 ( node radius =  3.095     )
+     element# 262 ( node radius =  3.100     )
+     element# 263 ( node radius =  3.105     )
+     element# 264 ( node radius =  3.110     )
+     element# 265 ( node radius =  3.115     )
+     element# 266 ( node radius =  3.120     )
+     element# 267 ( node radius =  3.125     )
+     element# 268 ( node radius =  3.130     )
+     element# 269 ( node radius =  3.135     )
+     element# 270 ( node radius =  3.140     )
+     element# 271 ( node radius =  3.145     )
+     element# 272 ( node radius =  3.150     )
+     element# 273 ( node radius =  3.155     )
+     element# 274 ( node radius =  3.160     )
+     element# 275 ( node radius =  3.165     )
+     element# 276 ( node radius =  3.170     )
+     element# 277 ( node radius =  3.175     )
+     element# 278 ( node radius =  3.180     )
+     element# 279 ( node radius =  3.185     )
+     element# 280 ( node radius =  3.190     )
+     element# 281 ( node radius =  3.195     )
+ Enter REGJUM
+ Exit REGJUM
+
+ --> Exit GENERA3 (gensys = T)
+
+ Enter OUTDIS
+ Exit OUTDIS
+
+ --> Begin OUTPUT routines:
+
+ Enter OUTRFF
+ curl: number of coefficients =           21
+ curl: number of coefficients =           16
+ Total RF power =   6.8590882579730408E-002
+ Exit OUTRFF
+
+ Enter OUTPOW (this may take some time ....)
+ Exit OUTPOW
+
+ Enter OUTRF2
+ POWERFAC =    1.0000000000000000     
+ Total RF power =   6.8590882579730408E-002
+ Erad_2D_re.dat                                    
+ Erad_2D_im.dat                                    
+ Epol_2D_re.dat                                    
+ Epol_2D_im.dat                                    
+ Etor_2D_re.dat                                    
+ Etor_2D_im.dat                                    
+ Htor_2D_re.dat                                    
+ Htor_2D_im.dat                                    
+ Re E+ for QLFP ... OK!
+ Im E+ for QLFP ... OK!
+ E_LH_2D_re.dat                                    
+ E_LH_2D_im.dat                                    
+ E_LH_2D_mo.dat                                    
+ Re E- for QLFP ... OK!
+ Im E- for QLFP ... OK!
+ E_RH_2D_re.dat                                    
+ E_RH_2D_im.dat                                    
+ E_RH_2D_mo.dat                                    
+ Re E// for QLFP ... OK!
+ Im E// for QLFP ... OK!
+ Epar_2D_re.dat                                    
+ Epar_2D_im.dat                                    
+ Epar_2D_mo.dat                                    
+ Exit OUTRF2
+
+ Enter OUTBIT
+ Exit OUTBIT
+
+ --> End of OUTPUT routines!
+
+
+ ---------------> Cyrano FINISHED!
+                  Total time used:   1489.9639999999999      sec
+

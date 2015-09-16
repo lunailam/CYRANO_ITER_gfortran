@@ -108,7 +108,7 @@ For future implementation in namelists:
   ktoan(1)=3.,ktoans=0.,ntotor=1,
 
   monomo=.false.,moant(1)=2,
-  modva1=-24,modva2=24,
+  modva1=-48,modva2=48,
 
   tancur(1)=(1.d0,0.d0),(-1.d0,0.d0),(1.d0,0.d0),(-1.d0,0.d0),
 
@@ -144,7 +144,7 @@ For future implementation in namelists:
   lelmin=5.d-4, leledg=2.d-3,
   scale=.false.,
   ncrot=64,
-  klim=48,
+  klim=96,
   nftnr=64,
   ncresp=800,
   ngauss=4,

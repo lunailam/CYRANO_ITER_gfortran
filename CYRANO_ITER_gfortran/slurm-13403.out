@@ -1,0 +1,3 @@
+ldd: ./Cyrano.exe: No such file or directory
+slurmd[nova120]: execve(): ./Cyrano.exe: No such file or directory
+srun: error: nova120: task 0: Exited with exit code 2

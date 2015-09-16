@@ -67,7 +67,8 @@ c     integer ng, nm, nd
       
       double precision 
      ;  cabs1, rle, rlei, rownor(maxbll), scaf(1-maxbll:maxbll)
-     ;, second, stiref
+     ;, second
+     ;, stiref
 
       double precision rtem, sc1(maxbll), ri, ri1
 

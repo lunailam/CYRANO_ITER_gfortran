@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -J Cyrano
+#SBATCH --partition short
+#SBATCH --nodes 1
+#SBATCH --ntasks 1
+#SBATCH --cpus-per-task 1
+
+cd $SLURM_SUBMIT_DIR
+
+ldd Cyrano.exe
+
+srun ./Cyrano
