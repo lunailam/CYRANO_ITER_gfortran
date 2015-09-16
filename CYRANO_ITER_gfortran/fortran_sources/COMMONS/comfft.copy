@@ -1,0 +1,22 @@
+c     Work space for FFT routines cfft2, rcfft2
+c     Initialized for npfft Fourier points once for the whole run.
+c
+c     cworkp: for cfft2 with 2nd argument idir=+1
+c     cworkm: for cfft2 with 2nd argument idir=-1
+c     worknr: for cfft2 with 2nd argument idir=+1, nonresonant terms.
+c     workp: for rcfft2 with 2nd argument idir=+1
+c     workm: for rcfft2 with 2nd argument idir=-1
+c
+cERN	complex*16 
+cc     ;  cworkp(5*npfft/2), cworkm(5*npfft/2), worknr(5*npfft/2)
+cc     ;, workp(3*npfft/2+2), workm(3*npfft/2+2)
+
+c     For IMSL version of FFT:
+	real *8 :: cwork2(4*npfft+15), cpy(2*npfft)
+     ;         , work2(2*npfft+15)
+     ;         , worknr2(4*npfft+15)
+
+	common /comfft/ cwork2, work2, cpy, worknr2
+
+cERN     	common /comfft/ cworkp, cworkm, worknr, workp, workm, 
+c     ;              cwork2, work2, cpy, worknr2

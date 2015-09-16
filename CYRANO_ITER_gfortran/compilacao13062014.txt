@@ -1,0 +1,149 @@
+"Cyrano.exe" -> "../../Cyrano"
+compow.copy:16.21:
+    Included at Cyrano.f:49:
+
+      COMMON /COMPOW/POWVEC,STDFOLDER,WRITE_M12STD
+                     1
+Warning: Padding of 2 bytes required before 'write_m12std' in COMMON 'compow' at (1); reorder elements or use -fno-align-commons
+IMSL_fft.f:853.46:
+
+     &                ' specified. ', MSGLEN, MSGSAV, MSGLEN)
+                                              1
+Warning: Rank mismatch in argument 'str2' at (1) (scalar and rank-1)
+compow.copy:16.21:
+    Included at INTF0.f:19:
+
+      COMMON /COMPOW/POWVEC,STDFOLDER,WRITE_M12STD
+                     1
+Warning: Padding of 2 bytes required before 'write_m12std' in COMMON 'compow' at (1); reorder elements or use -fno-align-commons
+compow.copy:16.21:
+    Included at OUTBIT.f:12:
+
+      COMMON /COMPOW/POWVEC,STDFOLDER,WRITE_M12STD
+                     1
+Warning: Padding of 2 bytes required before 'write_m12std' in COMMON 'compow' at (1); reorder elements or use -fno-align-commons
+compow.copy:16.21:
+    Included at OUTPOW.f:10:
+
+      COMMON /COMPOW/POWVEC,STDFOLDER,WRITE_M12STD
+                     1
+Warning: Padding of 2 bytes required before 'write_m12std' in COMMON 'compow' at (1); reorder elements or use -fno-align-commons
+compow.copy:16.21:
+    Included at OUTRF2.f:10:
+
+      COMMON /COMPOW/POWVEC,STDFOLDER,WRITE_M12STD
+                     1
+Warning: Padding of 2 bytes required before 'write_m12std' in COMMON 'compow' at (1); reorder elements or use -fno-align-commons
+compow.copy:16.21:
+    Included at OUTRFF.f:11:
+
+      COMMON /COMPOW/POWVEC,STDFOLDER,WRITE_M12STD
+                     1
+Warning: Padding of 2 bytes required before 'write_m12std' in COMMON 'compow' at (1); reorder elements or use -fno-align-commons
+compow.copy:16.21:
+    Included at POWAB23.f:18:
+
+      COMMON /COMPOW/POWVEC,STDFOLDER,WRITE_M12STD
+                     1
+Warning: Padding of 2 bytes required before 'write_m12std' in COMMON 'compow' at (1); reorder elements or use -fno-align-commons
+SOLVER_D4.f:575.30:
+
+        call aswr(3, nwn*ncw, ael, 1, nblk)
+                              1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:581.30:
+
+        call aswr(3, nwn*ncw, bel, 0, nblk)
+                              1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:615.30:
+
+        call asrd(1, nwn*ncw, ctom, 1, nblk)
+                              1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:622.32:
+
+          call asrd(1, nwn*ncw, ctom, 1, nblk)
+                                1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:629.32:
+
+          call asrd(2, nwn*ncw, ctom(lbl1*lbl2+1,1), 1, nblk)
+                                1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:773.27:
+
+      call aswr(1, j+lbl2, atom, iqueue, nblk)
+                           1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:824.32:
+
+          call aswr(1, nwn*ncw, btom, 1, nblk)
+                                1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:836.32:
+
+          call aswr(1, nwn*ncw, ctom, 0, nblk)
+                                1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:841.36:
+
+              call aswr(1, nwn*ncw, ctom, 0, nblk)
+                                    1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:846.36:
+
+              call aswr(2, nwn*ncw, ctom(lbl2*lbl3+1,1), 0, nblk)
+                                    1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:998.28:
+
+      call asrd(1, nwn*ncw, btom, 0, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1056.34:
+
+      call aswr(2, nwn*lbl2*nrhs, ctom, 0, nblk)
+                                  1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1095.28:
+
+      call aswr(2, nwn*ncw, ctom, 0, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1138.28:
+
+      call asrd(1, nwn*ncw, ctom, 0, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1141.38:
+
+          call asrd(2, nwn*lbl2*nrhs, ctom(1+lbl2*lbl3,1),
+                                      1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1185.28:
+
+      call aswr(2, nwn*ncw, ctom, iqueue, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1349.28:
+
+      call asrd(2, nwn*ncw, x, 0, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1414.28:
+
+      call aswr(2, nwn*ncw, x, 0, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1492.28:
+
+      call asrd(3, nwn*ncw, ael, 1, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+SOLVER_D4.f:1495.28:
+
+      call asrd(3, nwn*ncw, bel, 0, nblk)
+                            1
+Warning: Type mismatch in argument 'vec' at (1); passed COMPLEX(8) to REAL(8)
+

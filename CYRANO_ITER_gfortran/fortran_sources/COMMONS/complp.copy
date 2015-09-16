@@ -1,0 +1,7 @@
+c     directory path for plot data
+      character*17 paplda
+cJAC      character*41 paplda
+c      character*40 paplda
+
+      common /complp/
+     ;  paplda

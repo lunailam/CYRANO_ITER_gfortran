@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:34:34 2012
+        MODULE TABLES__genmod
+          INTERFACE 
+            SUBROUTINE TABLES
+            END SUBROUTINE TABLES
+          END INTERFACE 
+        END MODULE TABLES__genmod

@@ -1,0 +1,20 @@
+      namelist /namsys/
+     ;  ngauss, ncrot, klim, nftnr
+     ;, ncresp
+     ;, wripoi, wriblo
+     ;, wbc3, bulfce, mpvdd, autome, elpwl, elpdl, damcut
+     ;, lelmin, lelmax, leledg, killmo
+     ;, soldoc, scale
+     ;, ngaux, ngauv
+     ;, bcinb1, nabcap, bccase
+     ;, giplas, gicurl, gigdr
+     ;, stomat, onlyab, rawel1, recalc_total, recalc_by_species
+     ;, use_outpow
+
+cPL withdrawn: ;, recalc     
+
+c     ;, fulipi
+c     ;, epssol, sor
+c     ;, tolcgr, ncgrad, tolacc, ranini, restol, pgase, nmonot, hermit
+c     ;, anelim, splitm, refint, bandst, sparse, pregs
+c     ;, mgse, vince, leasqr

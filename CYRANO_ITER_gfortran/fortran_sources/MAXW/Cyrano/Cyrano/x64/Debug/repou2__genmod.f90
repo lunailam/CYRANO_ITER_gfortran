@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:36:24 2012
+        MODULE REPOU2__genmod
+          INTERFACE 
+            SUBROUTINE REPOU2
+            END SUBROUTINE REPOU2
+          END INTERFACE 
+        END MODULE REPOU2__genmod

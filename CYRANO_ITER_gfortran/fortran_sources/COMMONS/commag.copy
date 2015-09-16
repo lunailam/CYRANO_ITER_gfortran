@@ -1,0 +1,18 @@
+c     Magnetic parameters
+
+      integer nintps
+
+      double precision
+     ;  j0, ipl, alpha, rhocur
+     ;, b0, betaed(0:maxreg), pedge(0:maxreg)
+     ;, btor, bpol, bmodul, q, psi, kptab(npfft+1)
+     ;, bmotab(nabplo,npfft+1), qtab(nabplo), psitab(nabplo)
+     ;, bmin(nabplo), bmax(nabplo), bbar(nabplo), delb(nabplo)
+
+      common /commag/   
+     ;  j0, ipl, alpha, rhocur
+     ;, b0, betaed, pedge
+     ;, btor, bpol, bmodul, q, psi
+     ;, kptab, bmotab, qtab, psitab
+     ;, bmin, bmax, bbar, delb
+     ;, nintps

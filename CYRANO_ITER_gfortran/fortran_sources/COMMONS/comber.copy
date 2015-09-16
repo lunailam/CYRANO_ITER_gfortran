@@ -1,0 +1,6 @@
+         logical berstu
+
+         complex*16 k2bern,kbrla2
+
+         common /comber/ k2bern,kbrla2,berstu
+

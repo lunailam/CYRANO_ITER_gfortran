@@ -1,0 +1,38 @@
+c
+c     Frontal block-tridiagonal solver internal common block
+c
+      integer naqp
+      parameter( naqp = 3 )
+
+      logical newfil(3), newmat(3), scale, soldoc
+
+      integer nofile,unit(3)
+     ;       ,nprobl(3),iprobl(3),iprdef(maxpro,3)
+     ;       ,iprdat(maxpro,3)
+     ;       ,ngelim,nrhs,nthoma,lblock(maxnbl),stored
+     ;       ,tstore,storel
+     ;       ,blorhs,ithoma,iblk(3),ipvt(maxbll)
+     ;       ,aqp(naqp,3),iwri(3),irea(3),nblrd(3),nblwr(3)
+     ;       ,lwk1,lwk2
+     ;       ,nuni
+
+c     changed to solve array bound checking problem 17/7/97:
+c      parameter( lwk1 = ((maxpro+2)/iob2+1)*iobll
+c     ;         , lwk2 = ((maxnbl+5)/iobll+1)*iobll )
+      parameter( lwk1 = ((maxpro+2)/iob2+2)*iobll
+     ;         , lwk2 = ((maxnbl+5)/iobll+2)*iobll )
+
+      double precision
+     ;  timin ,timsol, timfac
+     ;, wk1zzz(lwk1,3), wk2zzz(lwk2,3)
+
+      common /comzzz2/
+     ;               wk1zzz,wk2zzz
+     ;              ,timin,timsol,timfac,nofile,unit
+     ;              ,nprobl,iprobl,iprdef,iprdat
+     ;              ,ngelim,nrhs,nthoma,lblock,stored
+     ;              ,tstore,storel
+     ;              ,blorhs,ithoma,ipvt,iblk,aqp
+     ;              ,iwri,irea,nblrd,nblwr
+     ;              ,nuni
+     ;              ,newfil,newmat,scale,soldoc

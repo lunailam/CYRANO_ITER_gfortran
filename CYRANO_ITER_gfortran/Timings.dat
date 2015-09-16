@@ -1,0 +1,696 @@
+        CYRANO (Timings)
+        ================
+
+ --> (CYRANO.f) Begin TABLES:   3.2000000000000001E-002 sec
+ --> (CYRANO.f)   End TABLES:   39.655000000000001      sec
+      Time used:   39.623000000000005      sec
+
+ --> (CYRANO.f) Begin FILANT:   39.826999999999998      sec
+ --> (CYRANO.f)   End FILANT:   39.841999999999999      sec
+      Time used:   1.5000000000000568E-002 sec
+
+ --> (CYRANO.f) Begin GENERA3 (gensys = T):   39.841999999999999      sec
+
+     element#   1 ( node radius = 0.1389E-02 )
+     --> (GENERA3.f) Begin ASCURL:   39.889000000000003      sec
+     --> (GENERA3.f)   End ASCURL:   40.404000000000003      sec
+          Time used:  0.51500000000000057      sec
+     --> (GENERA3.f) Begin ASPLAS:   40.404000000000003      sec
+     --> (GENERA3.f)   End ASPLAS:   41.262000000000000      sec
+          Time used:  0.85799999999999699      sec
+     --> (GENERA3.f) Begin FBSTEP:   41.746000000000002      sec
+     --> (GENERA3.f)   End FBSTEP:   42.058000000000000      sec
+          Time used:  0.31199999999999761      sec
+     element#   2 ( node radius = 0.2103E-01 )
+     --> (GENERA3.f) Begin ASCURL:   42.058000000000000      sec
+     --> (GENERA3.f)   End ASCURL:   42.261000000000003      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   42.261000000000003      sec
+     --> (GENERA3.f)   End ASPLAS:   43.166000000000004      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   43.166000000000004      sec
+     --> (GENERA3.f)   End FBSTEP:   43.883000000000003      sec
+          Time used:  0.71699999999999875      sec
+     element#   3 ( node radius = 0.3583E-01 )
+     --> (GENERA3.f) Begin ASCURL:   43.883000000000003      sec
+     --> (GENERA3.f)   End ASCURL:   44.116999999999997      sec
+          Time used:  0.23399999999999466      sec
+     --> (GENERA3.f) Begin ASPLAS:   44.116999999999997      sec
+     --> (GENERA3.f)   End ASPLAS:   44.975000000000001      sec
+          Time used:  0.85800000000000409      sec
+     --> (GENERA3.f) Begin FBSTEP:   44.975000000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   45.974000000000004      sec
+          Time used:  0.99900000000000233      sec
+     element#   4 ( node radius = 0.5063E-01 )
+     --> (GENERA3.f) Begin ASCURL:   45.974000000000004      sec
+     --> (GENERA3.f)   End ASCURL:   46.238999999999997      sec
+          Time used:  0.26499999999999346      sec
+     --> (GENERA3.f) Begin ASPLAS:   46.238999999999997      sec
+     --> (GENERA3.f)   End ASPLAS:   47.174999999999997      sec
+          Time used:  0.93599999999999994      sec
+     --> (GENERA3.f) Begin FBSTEP:   47.174999999999997      sec
+     --> (GENERA3.f)   End FBSTEP:   48.125999999999998      sec
+          Time used:  0.95100000000000051      sec
+     element#   5 ( node radius = 0.6543E-01 )
+     --> (GENERA3.f) Begin ASCURL:   48.125999999999998      sec
+     --> (GENERA3.f)   End ASCURL:   48.329000000000001      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   48.329000000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   49.234000000000002      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   49.234000000000002      sec
+     --> (GENERA3.f)   End FBSTEP:   50.139000000000003      sec
+          Time used:  0.90500000000000114      sec
+     element#   6 ( node radius = 0.8023E-01 )
+     --> (GENERA3.f) Begin ASCURL:   50.139000000000003      sec
+     --> (GENERA3.f)   End ASCURL:   50.356999999999999      sec
+          Time used:  0.21799999999999642      sec
+     --> (GENERA3.f) Begin ASPLAS:   50.356999999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   51.262000000000000      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   51.262000000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   52.167000000000002      sec
+          Time used:  0.90500000000000114      sec
+     element#   7 ( node radius = 0.9503E-01 )
+     --> (GENERA3.f) Begin ASCURL:   52.167000000000002      sec
+     --> (GENERA3.f)   End ASCURL:   52.369999999999997      sec
+          Time used:  0.20299999999999585      sec
+     --> (GENERA3.f) Begin ASPLAS:   52.369999999999997      sec
+     --> (GENERA3.f)   End ASPLAS:   53.289999999999999      sec
+          Time used:  0.92000000000000171      sec
+     --> (GENERA3.f) Begin FBSTEP:   53.289999999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   54.116999999999997      sec
+          Time used:  0.82699999999999818      sec
+     element#   8 ( node radius = 0.1098     )
+     --> (GENERA3.f) Begin ASCURL:   54.116999999999997      sec
+     --> (GENERA3.f)   End ASCURL:   54.350999999999999      sec
+          Time used:  0.23400000000000176      sec
+     --> (GENERA3.f) Begin ASPLAS:   54.350999999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   55.256000000000000      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   55.256000000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   56.113000000000000      sec
+          Time used:  0.85699999999999932      sec
+     element#   9 ( node radius = 0.1246     )
+     --> (GENERA3.f) Begin ASCURL:   56.113000000000000      sec
+     --> (GENERA3.f)   End ASCURL:   56.316000000000003      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   56.316000000000003      sec
+     --> (GENERA3.f)   End ASPLAS:   57.158000000000001      sec
+          Time used:  0.84199999999999875      sec
+     --> (GENERA3.f) Begin FBSTEP:   57.158000000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   58.125999999999998      sec
+          Time used:  0.96799999999999642      sec
+     element#  10 ( node radius = 0.1394     )
+     --> (GENERA3.f) Begin ASCURL:   58.125999999999998      sec
+     --> (GENERA3.f)   End ASCURL:   58.359999999999999      sec
+          Time used:  0.23400000000000176      sec
+     --> (GENERA3.f) Begin ASPLAS:   58.359999999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   59.311000000000000      sec
+          Time used:  0.95100000000000051      sec
+     --> (GENERA3.f) Begin FBSTEP:   59.311000000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   60.185000000000002      sec
+          Time used:  0.87400000000000233      sec
+     element#  11 ( node radius = 0.1542     )
+     --> (GENERA3.f) Begin ASCURL:   60.185000000000002      sec
+     --> (GENERA3.f)   End ASCURL:   60.387999999999998      sec
+          Time used:  0.20299999999999585      sec
+     --> (GENERA3.f) Begin ASPLAS:   60.387999999999998      sec
+     --> (GENERA3.f)   End ASPLAS:   61.277000000000001      sec
+          Time used:  0.88900000000000290      sec
+     --> (GENERA3.f) Begin FBSTEP:   61.277000000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   62.103999999999999      sec
+          Time used:  0.82699999999999818      sec
+     element#  12 ( node radius = 0.1690     )
+     --> (GENERA3.f) Begin ASCURL:   62.103999999999999      sec
+     --> (GENERA3.f)   End ASCURL:   62.291000000000004      sec
+          Time used:  0.18700000000000472      sec
+     --> (GENERA3.f) Begin ASPLAS:   62.291000000000004      sec
+     --> (GENERA3.f)   End ASPLAS:   63.180000000000000      sec
+          Time used:  0.88899999999999579      sec
+     --> (GENERA3.f) Begin FBSTEP:   63.180000000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   64.099999999999994      sec
+          Time used:  0.91999999999999460      sec
+     element#  13 ( node radius = 0.1838     )
+     --> (GENERA3.f) Begin ASCURL:   64.099999999999994      sec
+     --> (GENERA3.f)   End ASCURL:   64.318999999999988      sec
+          Time used:  0.21899999999999409      sec
+     --> (GENERA3.f) Begin ASPLAS:   64.318999999999988      sec
+     --> (GENERA3.f)   End ASPLAS:   65.160999999999987      sec
+          Time used:  0.84199999999999875      sec
+     --> (GENERA3.f) Begin FBSTEP:   65.160999999999987      sec
+     --> (GENERA3.f)   End FBSTEP:   65.971999999999994      sec
+          Time used:  0.81100000000000705      sec
+     element#  14 ( node radius = 0.1986     )
+     --> (GENERA3.f) Begin ASCURL:   65.971999999999994      sec
+     --> (GENERA3.f)   End ASCURL:   66.159999999999997      sec
+          Time used:  0.18800000000000239      sec
+     --> (GENERA3.f) Begin ASPLAS:   66.159999999999997      sec
+     --> (GENERA3.f)   End ASPLAS:   67.079999999999998      sec
+          Time used:  0.92000000000000171      sec
+     --> (GENERA3.f) Begin FBSTEP:   67.079999999999998      sec
+     --> (GENERA3.f)   End FBSTEP:   67.969999999999999      sec
+          Time used:  0.89000000000000057      sec
+     element#  15 ( node radius = 0.2134     )
+     --> (GENERA3.f) Begin ASCURL:   67.969999999999999      sec
+     --> (GENERA3.f)   End ASCURL:   68.203999999999994      sec
+          Time used:  0.23399999999999466      sec
+     --> (GENERA3.f) Begin ASPLAS:   68.203999999999994      sec
+     --> (GENERA3.f)   End ASPLAS:   69.076999999999998      sec
+          Time used:  0.87300000000000466      sec
+     --> (GENERA3.f) Begin FBSTEP:   69.076999999999998      sec
+     --> (GENERA3.f)   End FBSTEP:   69.934999999999988      sec
+          Time used:  0.85799999999998988      sec
+     element#  16 ( node radius = 0.2282     )
+     --> (GENERA3.f) Begin ASCURL:   69.934999999999988      sec
+     --> (GENERA3.f)   End ASCURL:   70.152999999999992      sec
+          Time used:  0.21800000000000352      sec
+     --> (GENERA3.f) Begin ASPLAS:   70.152999999999992      sec
+     --> (GENERA3.f)   End ASPLAS:   71.073999999999998      sec
+          Time used:  0.92100000000000648      sec
+     --> (GENERA3.f) Begin FBSTEP:   71.073999999999998      sec
+     --> (GENERA3.f)   End FBSTEP:   72.055999999999997      sec
+          Time used:  0.98199999999999932      sec
+     element#  17 ( node radius = 0.2430     )
+     --> (GENERA3.f) Begin ASCURL:   72.055999999999997      sec
+     --> (GENERA3.f)   End ASCURL:   72.259000000000000      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   72.259000000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   73.116999999999990      sec
+          Time used:  0.85799999999998988      sec
+     --> (GENERA3.f) Begin FBSTEP:   73.116999999999990      sec
+     --> (GENERA3.f)   End FBSTEP:   73.959999999999994      sec
+          Time used:  0.84300000000000352      sec
+     element#  18 ( node radius = 0.2578     )
+     --> (GENERA3.f) Begin ASCURL:   73.959999999999994      sec
+     --> (GENERA3.f)   End ASCURL:   74.146999999999991      sec
+          Time used:  0.18699999999999761      sec
+     --> (GENERA3.f) Begin ASPLAS:   74.146999999999991      sec
+     --> (GENERA3.f)   End ASPLAS:   75.082999999999998      sec
+          Time used:  0.93600000000000705      sec
+     --> (GENERA3.f) Begin FBSTEP:   75.082999999999998      sec
+     --> (GENERA3.f)   End FBSTEP:   75.956999999999994      sec
+          Time used:  0.87399999999999523      sec
+     element#  19 ( node radius = 0.2726     )
+     --> (GENERA3.f) Begin ASCURL:   75.956999999999994      sec
+     --> (GENERA3.f)   End ASCURL:   76.159999999999997      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   76.159999999999997      sec
+     --> (GENERA3.f)   End ASPLAS:   77.079999999999998      sec
+          Time used:  0.92000000000000171      sec
+     --> (GENERA3.f) Begin FBSTEP:   77.079999999999998      sec
+     --> (GENERA3.f)   End FBSTEP:   78.031999999999996      sec
+          Time used:  0.95199999999999818      sec
+     element#  20 ( node radius = 0.2874     )
+     --> (GENERA3.f) Begin ASCURL:   78.031999999999996      sec
+     --> (GENERA3.f)   End ASCURL:   78.265999999999991      sec
+          Time used:  0.23399999999999466      sec
+     --> (GENERA3.f) Begin ASPLAS:   78.265999999999991      sec
+     --> (GENERA3.f)   End ASPLAS:   79.123999999999995      sec
+          Time used:  0.85800000000000409      sec
+     --> (GENERA3.f) Begin FBSTEP:   79.123999999999995      sec
+     --> (GENERA3.f)   End FBSTEP:   80.058999999999997      sec
+          Time used:  0.93500000000000227      sec
+     element#  21 ( node radius = 0.3022     )
+     --> (GENERA3.f) Begin ASCURL:   80.058999999999997      sec
+     --> (GENERA3.f)   End ASCURL:   80.308999999999997      sec
+          Time used:  0.25000000000000000      sec
+     --> (GENERA3.f) Begin ASPLAS:   80.308999999999997      sec
+     --> (GENERA3.f)   End ASPLAS:   81.275999999999996      sec
+          Time used:  0.96699999999999875      sec
+     --> (GENERA3.f) Begin FBSTEP:   81.275999999999996      sec
+     --> (GENERA3.f)   End FBSTEP:   82.134999999999991      sec
+          Time used:  0.85899999999999466      sec
+     element#  22 ( node radius = 0.3170     )
+     --> (GENERA3.f) Begin ASCURL:   82.134999999999991      sec
+     --> (GENERA3.f)   End ASCURL:   82.352999999999994      sec
+          Time used:  0.21800000000000352      sec
+     --> (GENERA3.f) Begin ASPLAS:   82.352999999999994      sec
+     --> (GENERA3.f)   End ASPLAS:   83.226999999999990      sec
+          Time used:  0.87399999999999523      sec
+     --> (GENERA3.f) Begin FBSTEP:   83.226999999999990      sec
+     --> (GENERA3.f)   End FBSTEP:   84.037999999999997      sec
+          Time used:  0.81100000000000705      sec
+     element#  23 ( node radius = 0.3318     )
+     --> (GENERA3.f) Begin ASCURL:   84.037999999999997      sec
+     --> (GENERA3.f)   End ASCURL:   84.256000000000000      sec
+          Time used:  0.21800000000000352      sec
+     --> (GENERA3.f) Begin ASPLAS:   84.256000000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   85.207999999999998      sec
+          Time used:  0.95199999999999818      sec
+     --> (GENERA3.f) Begin FBSTEP:   85.207999999999998      sec
+     --> (GENERA3.f)   End FBSTEP:   86.018999999999991      sec
+          Time used:  0.81099999999999284      sec
+     element#  24 ( node radius = 0.3466     )
+     --> (GENERA3.f) Begin ASCURL:   86.018999999999991      sec
+     --> (GENERA3.f)   End ASCURL:   86.236999999999995      sec
+          Time used:  0.21800000000000352      sec
+     --> (GENERA3.f) Begin ASPLAS:   86.236999999999995      sec
+     --> (GENERA3.f)   End ASPLAS:   87.157999999999987      sec
+          Time used:  0.92099999999999227      sec
+     --> (GENERA3.f) Begin FBSTEP:   87.157999999999987      sec
+     --> (GENERA3.f)   End FBSTEP:   88.108999999999995      sec
+          Time used:  0.95100000000000762      sec
+     element#  25 ( node radius = 0.3614     )
+     --> (GENERA3.f) Begin ASCURL:   88.108999999999995      sec
+     --> (GENERA3.f)   End ASCURL:   88.342999999999989      sec
+          Time used:  0.23399999999999466      sec
+     --> (GENERA3.f) Begin ASPLAS:   88.342999999999989      sec
+     --> (GENERA3.f)   End ASPLAS:   89.279999999999987      sec
+          Time used:  0.93699999999999761      sec
+     --> (GENERA3.f) Begin FBSTEP:   89.279999999999987      sec
+     --> (GENERA3.f)   End FBSTEP:   90.198999999999998      sec
+          Time used:  0.91900000000001114      sec
+     element#  26 ( node radius = 0.3762     )
+     --> (GENERA3.f) Begin ASCURL:   90.198999999999998      sec
+     --> (GENERA3.f)   End ASCURL:   90.417999999999992      sec
+          Time used:  0.21899999999999409      sec
+     --> (GENERA3.f) Begin ASPLAS:   90.417999999999992      sec
+     --> (GENERA3.f)   End ASPLAS:   91.322999999999993      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   91.322999999999993      sec
+     --> (GENERA3.f)   End FBSTEP:   92.134000000000000      sec
+          Time used:  0.81100000000000705      sec
+     element#  27 ( node radius = 0.3910     )
+     --> (GENERA3.f) Begin ASCURL:   92.134000000000000      sec
+     --> (GENERA3.f)   End ASCURL:   92.336999999999989      sec
+          Time used:  0.20299999999998875      sec
+     --> (GENERA3.f) Begin ASPLAS:   92.336999999999989      sec
+     --> (GENERA3.f)   End ASPLAS:   93.194999999999993      sec
+          Time used:  0.85800000000000409      sec
+     --> (GENERA3.f) Begin FBSTEP:   93.194999999999993      sec
+     --> (GENERA3.f)   End FBSTEP:   94.114999999999995      sec
+          Time used:  0.92000000000000171      sec
+     element#  28 ( node radius = 0.4058     )
+     --> (GENERA3.f) Begin ASCURL:   94.114999999999995      sec
+     --> (GENERA3.f)   End ASCURL:   94.333999999999989      sec
+          Time used:  0.21899999999999409      sec
+     --> (GENERA3.f) Begin ASPLAS:   94.333999999999989      sec
+     --> (GENERA3.f)   End ASPLAS:   95.222999999999999      sec
+          Time used:  0.88900000000001000      sec
+     --> (GENERA3.f) Begin FBSTEP:   95.222999999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   96.205999999999989      sec
+          Time used:  0.98299999999998988      sec
+     element#  29 ( node radius = 0.4206     )
+     --> (GENERA3.f) Begin ASCURL:   96.205999999999989      sec
+     --> (GENERA3.f)   End ASCURL:   96.470999999999989      sec
+          Time used:  0.26500000000000057      sec
+     --> (GENERA3.f) Begin ASPLAS:   96.470999999999989      sec
+     --> (GENERA3.f)   End ASPLAS:   97.375999999999991      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   97.375999999999991      sec
+     --> (GENERA3.f)   End FBSTEP:   98.311999999999998      sec
+          Time used:  0.93600000000000705      sec
+     element#  30 ( node radius = 0.4354     )
+     --> (GENERA3.f) Begin ASCURL:   98.311999999999998      sec
+     --> (GENERA3.f)   End ASCURL:   98.515000000000001      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   98.515000000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   99.403999999999996      sec
+          Time used:  0.88899999999999579      sec
+     --> (GENERA3.f) Begin FBSTEP:   99.403999999999996      sec
+     --> (GENERA3.f)   End FBSTEP:   100.24700000000000      sec
+          Time used:  0.84300000000000352      sec
+     element#  31 ( node radius = 0.4502     )
+     --> (GENERA3.f) Begin ASCURL:   100.24700000000000      sec
+     --> (GENERA3.f)   End ASCURL:   100.44900000000000      sec
+          Time used:  0.20199999999999818      sec
+     --> (GENERA3.f) Begin ASPLAS:   100.44900000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   101.30699999999999      sec
+          Time used:  0.85799999999998988      sec
+     --> (GENERA3.f) Begin FBSTEP:   101.30699999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   102.19600000000000      sec
+          Time used:  0.88900000000001000      sec
+     element#  32 ( node radius = 0.4650     )
+     --> (GENERA3.f) Begin ASCURL:   102.19600000000000      sec
+     --> (GENERA3.f)   End ASCURL:   102.38300000000000      sec
+          Time used:  0.18699999999999761      sec
+     --> (GENERA3.f) Begin ASPLAS:   102.38300000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   103.31899999999999      sec
+          Time used:  0.93599999999999284      sec
+     --> (GENERA3.f) Begin FBSTEP:   103.31899999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   104.30199999999999      sec
+          Time used:  0.98300000000000409      sec
+     element#  33 ( node radius = 0.4798     )
+     --> (GENERA3.f) Begin ASCURL:   104.30199999999999      sec
+     --> (GENERA3.f)   End ASCURL:   104.50500000000000      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   104.50500000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   105.40899999999999      sec
+          Time used:  0.90399999999999636      sec
+     --> (GENERA3.f) Begin FBSTEP:   105.40899999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   106.37700000000000      sec
+          Time used:  0.96800000000000352      sec
+     element#  34 ( node radius = 0.4946     )
+     --> (GENERA3.f) Begin ASCURL:   106.37700000000000      sec
+     --> (GENERA3.f)   End ASCURL:   106.59500000000000      sec
+          Time used:  0.21800000000000352      sec
+     --> (GENERA3.f) Begin ASPLAS:   106.59500000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   107.45299999999999      sec
+          Time used:  0.85799999999998988      sec
+     --> (GENERA3.f) Begin FBSTEP:   107.45299999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   108.42099999999999      sec
+          Time used:  0.96800000000000352      sec
+     element#  35 ( node radius = 0.5094     )
+     --> (GENERA3.f) Begin ASCURL:   108.42099999999999      sec
+     --> (GENERA3.f)   End ASCURL:   108.62400000000000      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   108.62400000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   109.49700000000000      sec
+          Time used:  0.87300000000000466      sec
+     --> (GENERA3.f) Begin FBSTEP:   109.49700000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   110.35499999999999      sec
+          Time used:  0.85799999999998988      sec
+     element#  36 ( node radius = 0.5242     )
+     --> (GENERA3.f) Begin ASCURL:   110.35499999999999      sec
+     --> (GENERA3.f)   End ASCURL:   110.55799999999999      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   110.55799999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   111.47900000000000      sec
+          Time used:  0.92100000000000648      sec
+     --> (GENERA3.f) Begin FBSTEP:   111.47900000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   112.33600000000000      sec
+          Time used:  0.85699999999999932      sec
+     element#  37 ( node radius = 0.5390     )
+     --> (GENERA3.f) Begin ASCURL:   112.33600000000000      sec
+     --> (GENERA3.f)   End ASCURL:   112.52300000000000      sec
+          Time used:  0.18699999999999761      sec
+     --> (GENERA3.f) Begin ASPLAS:   112.52300000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   113.44399999999999      sec
+          Time used:  0.92099999999999227      sec
+     --> (GENERA3.f) Begin FBSTEP:   113.44399999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   114.31800000000000      sec
+          Time used:  0.87400000000000944      sec
+     element#  38 ( node radius = 0.5538     )
+     --> (GENERA3.f) Begin ASCURL:   114.31800000000000      sec
+     --> (GENERA3.f)   End ASCURL:   114.50500000000000      sec
+          Time used:  0.18699999999999761      sec
+     --> (GENERA3.f) Begin ASPLAS:   114.50500000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   115.44099999999999      sec
+          Time used:  0.93599999999999284      sec
+     --> (GENERA3.f) Begin FBSTEP:   115.44099999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   116.25099999999999      sec
+          Time used:  0.81000000000000227      sec
+     element#  39 ( node radius = 0.5686     )
+     --> (GENERA3.f) Begin ASCURL:   116.25099999999999      sec
+     --> (GENERA3.f)   End ASCURL:   116.45399999999999      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   116.45399999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   117.29700000000000      sec
+          Time used:  0.84300000000000352      sec
+     --> (GENERA3.f) Begin FBSTEP:   117.29700000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   118.12400000000000      sec
+          Time used:  0.82699999999999818      sec
+     element#  40 ( node radius = 0.5834     )
+     --> (GENERA3.f) Begin ASCURL:   118.12400000000000      sec
+     --> (GENERA3.f)   End ASCURL:   118.31099999999999      sec
+          Time used:  0.18699999999999761      sec
+     --> (GENERA3.f) Begin ASPLAS:   118.31099999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   119.21599999999999      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   119.21599999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   120.10499999999999      sec
+          Time used:  0.88899999999999579      sec
+     element#  41 ( node radius = 0.5982     )
+     --> (GENERA3.f) Begin ASCURL:   120.10499999999999      sec
+     --> (GENERA3.f)   End ASCURL:   120.30799999999999      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   120.30799999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   121.22900000000000      sec
+          Time used:  0.92100000000000648      sec
+     --> (GENERA3.f) Begin FBSTEP:   121.22900000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   122.10199999999999      sec
+          Time used:  0.87299999999999045      sec
+     element#  42 ( node radius = 0.6130     )
+     --> (GENERA3.f) Begin ASCURL:   122.10199999999999      sec
+     --> (GENERA3.f)   End ASCURL:   122.31999999999999      sec
+          Time used:  0.21800000000000352      sec
+     --> (GENERA3.f) Begin ASPLAS:   122.31999999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   123.24100000000000      sec
+          Time used:  0.92100000000000648      sec
+     --> (GENERA3.f) Begin FBSTEP:   123.24100000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   124.14500000000000      sec
+          Time used:  0.90399999999999636      sec
+     element#  43 ( node radius = 0.6278     )
+     --> (GENERA3.f) Begin ASCURL:   124.14500000000000      sec
+     --> (GENERA3.f)   End ASCURL:   124.36300000000000      sec
+          Time used:  0.21800000000000352      sec
+     --> (GENERA3.f) Begin ASPLAS:   124.36300000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   125.42399999999999      sec
+          Time used:   1.0609999999999928      sec
+     --> (GENERA3.f) Begin FBSTEP:   125.42399999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   126.48500000000000      sec
+          Time used:   1.0610000000000070      sec
+     element#  44 ( node radius = 0.6426     )
+     --> (GENERA3.f) Begin ASCURL:   126.48500000000000      sec
+     --> (GENERA3.f)   End ASCURL:   126.70399999999999      sec
+          Time used:  0.21899999999999409      sec
+     --> (GENERA3.f) Begin ASPLAS:   126.70399999999999      sec
+     --> (GENERA3.f)   End ASPLAS:   127.68700000000000      sec
+          Time used:  0.98300000000000409      sec
+     --> (GENERA3.f) Begin FBSTEP:   127.68700000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   128.82600000000002      sec
+          Time used:   1.1390000000000242      sec
+     element#  45 ( node radius = 0.6574     )
+     --> (GENERA3.f) Begin ASCURL:   128.82600000000002      sec
+     --> (GENERA3.f)   End ASCURL:   129.09100000000001      sec
+          Time used:  0.26499999999998636      sec
+     --> (GENERA3.f) Begin ASPLAS:   129.09100000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   130.13600000000000      sec
+          Time used:   1.0449999999999875      sec
+     --> (GENERA3.f) Begin FBSTEP:   130.13600000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   131.30600000000001      sec
+          Time used:   1.1700000000000159      sec
+     element#  46 ( node radius = 0.6722     )
+     --> (GENERA3.f) Begin ASCURL:   131.30600000000001      sec
+     --> (GENERA3.f)   End ASCURL:   131.54000000000002      sec
+          Time used:  0.23400000000000887      sec
+     --> (GENERA3.f) Begin ASPLAS:   131.54000000000002      sec
+     --> (GENERA3.f)   End ASPLAS:   132.60100000000000      sec
+          Time used:   1.0609999999999786      sec
+     --> (GENERA3.f) Begin FBSTEP:   132.60100000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   133.84900000000002      sec
+          Time used:   1.2480000000000189      sec
+     element#  47 ( node radius = 0.6870     )
+     --> (GENERA3.f) Begin ASCURL:   133.84900000000002      sec
+     --> (GENERA3.f)   End ASCURL:   134.09800000000001      sec
+          Time used:  0.24899999999999523      sec
+     --> (GENERA3.f) Begin ASPLAS:   134.09800000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   135.11199999999999      sec
+          Time used:   1.0139999999999816      sec
+     --> (GENERA3.f) Begin FBSTEP:   135.11199999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   136.23600000000002      sec
+          Time used:   1.1240000000000236      sec
+     element#  48 ( node radius = 0.7018     )
+     --> (GENERA3.f) Begin ASCURL:   136.23600000000002      sec
+     --> (GENERA3.f)   End ASCURL:   136.51700000000000      sec
+          Time used:  0.28099999999997749      sec
+     --> (GENERA3.f) Begin ASPLAS:   136.51700000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   137.60900000000001      sec
+          Time used:   1.0920000000000130      sec
+     --> (GENERA3.f) Begin FBSTEP:   137.60900000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   138.81000000000000      sec
+          Time used:   1.2009999999999934      sec
+     element#  49 ( node radius = 0.7166     )
+     --> (GENERA3.f) Begin ASCURL:   138.81000000000000      sec
+     --> (GENERA3.f)   End ASCURL:   139.07500000000002      sec
+          Time used:  0.26500000000001478      sec
+     --> (GENERA3.f) Begin ASPLAS:   139.07500000000002      sec
+     --> (GENERA3.f)   End ASPLAS:   140.15100000000001      sec
+          Time used:   1.0759999999999934      sec
+     --> (GENERA3.f) Begin FBSTEP:   140.15100000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   141.30600000000001      sec
+          Time used:   1.1550000000000011      sec
+     element#  50 ( node radius = 0.7314     )
+     --> (GENERA3.f) Begin ASCURL:   141.30600000000001      sec
+     --> (GENERA3.f)   End ASCURL:   141.55500000000001      sec
+          Time used:  0.24899999999999523      sec
+     --> (GENERA3.f) Begin ASPLAS:   141.55500000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   142.59999999999999      sec
+          Time used:   1.0449999999999875      sec
+     --> (GENERA3.f) Begin FBSTEP:   142.59999999999999      sec
+     --> (GENERA3.f)   End FBSTEP:   143.69200000000001      sec
+          Time used:   1.0920000000000130      sec
+     element#  51 ( node radius = 0.7462     )
+     --> (GENERA3.f) Begin ASCURL:   143.69200000000001      sec
+     --> (GENERA3.f)   End ASCURL:   143.94200000000001      sec
+          Time used:  0.25000000000000000      sec
+     --> (GENERA3.f) Begin ASPLAS:   143.94200000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   144.87800000000001      sec
+          Time used:  0.93600000000000705      sec
+     --> (GENERA3.f) Begin FBSTEP:   144.87800000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   145.92300000000000      sec
+          Time used:   1.0449999999999875      sec
+     element#  52 ( node radius = 0.7610     )
+     --> (GENERA3.f) Begin ASCURL:   145.92300000000000      sec
+     --> (GENERA3.f)   End ASCURL:   146.20400000000001      sec
+          Time used:  0.28100000000000591      sec
+     --> (GENERA3.f) Begin ASPLAS:   146.20400000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   147.17100000000002      sec
+          Time used:  0.96700000000001296      sec
+     --> (GENERA3.f) Begin FBSTEP:   147.17100000000002      sec
+     --> (GENERA3.f)   End FBSTEP:   148.18500000000000      sec
+          Time used:   1.0139999999999816      sec
+     element#  53 ( node radius = 0.7758     )
+     --> (GENERA3.f) Begin ASCURL:   148.18500000000000      sec
+     --> (GENERA3.f)   End ASCURL:   148.46600000000001      sec
+          Time used:  0.28100000000000591      sec
+     --> (GENERA3.f) Begin ASPLAS:   148.46600000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   149.43300000000002      sec
+          Time used:  0.96700000000001296      sec
+     --> (GENERA3.f) Begin FBSTEP:   149.43300000000002      sec
+     --> (GENERA3.f)   End FBSTEP:   150.47800000000001      sec
+          Time used:   1.0449999999999875      sec
+     element#  54 ( node radius = 0.7906     )
+     --> (GENERA3.f) Begin ASCURL:   150.47800000000001      sec
+     --> (GENERA3.f)   End ASCURL:   150.71200000000002      sec
+          Time used:  0.23400000000000887      sec
+     --> (GENERA3.f) Begin ASPLAS:   150.71200000000002      sec
+     --> (GENERA3.f)   End ASPLAS:   151.71100000000001      sec
+          Time used:  0.99899999999999523      sec
+     --> (GENERA3.f) Begin FBSTEP:   151.71100000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   152.75600000000000      sec
+          Time used:   1.0449999999999875      sec
+     element#  55 ( node radius = 0.8054     )
+     --> (GENERA3.f) Begin ASCURL:   152.75600000000000      sec
+     --> (GENERA3.f)   End ASCURL:   152.97400000000002      sec
+          Time used:  0.21800000000001774      sec
+     --> (GENERA3.f) Begin ASPLAS:   152.97400000000002      sec
+     --> (GENERA3.f)   End ASPLAS:   153.87900000000002      sec
+          Time used:  0.90500000000000114      sec
+     --> (GENERA3.f) Begin FBSTEP:   153.87900000000002      sec
+     --> (GENERA3.f)   End FBSTEP:   154.95600000000002      sec
+          Time used:   1.0769999999999982      sec
+     element#  56 ( node radius = 0.8202     )
+     --> (GENERA3.f) Begin ASCURL:   154.95600000000002      sec
+     --> (GENERA3.f)   End ASCURL:   155.17400000000001      sec
+          Time used:  0.21799999999998931      sec
+     --> (GENERA3.f) Begin ASPLAS:   155.17400000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   156.25100000000000      sec
+          Time used:   1.0769999999999982      sec
+     --> (GENERA3.f) Begin FBSTEP:   156.25100000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   157.35800000000000      sec
+          Time used:   1.1069999999999993      sec
+     element#  57 ( node radius = 0.8350     )
+     --> (GENERA3.f) Begin ASCURL:   157.35800000000000      sec
+     --> (GENERA3.f)   End ASCURL:   157.56100000000001      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   157.56100000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   158.57500000000002      sec
+          Time used:   1.0140000000000100      sec
+     --> (GENERA3.f) Begin FBSTEP:   158.57500000000002      sec
+     --> (GENERA3.f)   End FBSTEP:   159.60500000000002      sec
+          Time used:   1.0300000000000011      sec
+     element#  58 ( node radius = 0.8498     )
+     --> (GENERA3.f) Begin ASCURL:   159.60500000000002      sec
+     --> (GENERA3.f)   End ASCURL:   159.85400000000001      sec
+          Time used:  0.24899999999999523      sec
+     --> (GENERA3.f) Begin ASPLAS:   159.85400000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   160.85300000000001      sec
+          Time used:  0.99899999999999523      sec
+     --> (GENERA3.f) Begin FBSTEP:   160.85300000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   161.88200000000001      sec
+          Time used:   1.0289999999999964      sec
+     element#  59 ( node radius = 0.8646     )
+     --> (GENERA3.f) Begin ASCURL:   161.88200000000001      sec
+     --> (GENERA3.f)   End ASCURL:   162.10100000000000      sec
+          Time used:  0.21899999999999409      sec
+     --> (GENERA3.f) Begin ASPLAS:   162.10100000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   163.11500000000001      sec
+          Time used:   1.0140000000000100      sec
+     --> (GENERA3.f) Begin FBSTEP:   163.11500000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   164.16000000000000      sec
+          Time used:   1.0449999999999875      sec
+     element#  60 ( node radius = 0.8794     )
+     --> (GENERA3.f) Begin ASCURL:   164.16000000000000      sec
+     --> (GENERA3.f)   End ASCURL:   164.41000000000000      sec
+          Time used:  0.25000000000000000      sec
+     --> (GENERA3.f) Begin ASPLAS:   164.41000000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   165.54800000000000      sec
+          Time used:   1.1380000000000052      sec
+     --> (GENERA3.f) Begin FBSTEP:   165.54800000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   166.59300000000002      sec
+          Time used:   1.0450000000000159      sec
+     element#  61 ( node radius = 0.8942     )
+     --> (GENERA3.f) Begin ASCURL:   166.59300000000002      sec
+     --> (GENERA3.f)   End ASCURL:   166.81100000000001      sec
+          Time used:  0.21799999999998931      sec
+     --> (GENERA3.f) Begin ASPLAS:   166.81100000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   167.88800000000001      sec
+          Time used:   1.0769999999999982      sec
+     --> (GENERA3.f) Begin FBSTEP:   167.88800000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   168.91800000000001      sec
+          Time used:   1.0300000000000011      sec
+     element#  62 ( node radius = 0.9090     )
+     --> (GENERA3.f) Begin ASCURL:   168.91800000000001      sec
+     --> (GENERA3.f)   End ASCURL:   169.13600000000000      sec
+          Time used:  0.21799999999998931      sec
+     --> (GENERA3.f) Begin ASPLAS:   169.13600000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   170.11900000000000      sec
+          Time used:  0.98300000000000409      sec
+     --> (GENERA3.f) Begin FBSTEP:   170.11900000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   171.08700000000002      sec
+          Time used:  0.96800000000001774      sec
+     element#  63 ( node radius = 0.9238     )
+     --> (GENERA3.f) Begin ASCURL:   171.08700000000002      sec
+     --> (GENERA3.f)   End ASCURL:   171.30500000000001      sec
+          Time used:  0.21799999999998931      sec
+     --> (GENERA3.f) Begin ASPLAS:   171.30500000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   172.25700000000001      sec
+          Time used:  0.95199999999999818      sec
+     --> (GENERA3.f) Begin FBSTEP:   172.25700000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   173.36400000000000      sec
+          Time used:   1.1069999999999993      sec
+     element#  64 ( node radius = 0.9386     )
+     --> (GENERA3.f) Begin ASCURL:   173.36400000000000      sec
+     --> (GENERA3.f)   End ASCURL:   173.62900000000002      sec
+          Time used:  0.26500000000001478      sec
+     --> (GENERA3.f) Begin ASPLAS:   173.62900000000002      sec
+     --> (GENERA3.f)   End ASPLAS:   174.64300000000000      sec
+          Time used:   1.0139999999999816      sec
+     --> (GENERA3.f) Begin FBSTEP:   174.64300000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   175.78200000000001      sec
+          Time used:   1.1390000000000100      sec
+     element#  65 ( node radius = 0.9534     )
+     --> (GENERA3.f) Begin ASCURL:   175.78200000000001      sec
+     --> (GENERA3.f)   End ASCURL:   176.04700000000000      sec
+          Time used:  0.26499999999998636      sec
+     --> (GENERA3.f) Begin ASPLAS:   176.04700000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   177.03000000000000      sec
+          Time used:  0.98300000000000409      sec
+     --> (GENERA3.f) Begin FBSTEP:   177.03000000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   178.04400000000001      sec
+          Time used:   1.0140000000000100      sec
+     element#  66 ( node radius = 0.9682     )
+     --> (GENERA3.f) Begin ASCURL:   178.04400000000001      sec
+     --> (GENERA3.f)   End ASCURL:   178.29400000000001      sec
+          Time used:  0.25000000000000000      sec
+     --> (GENERA3.f) Begin ASPLAS:   178.29400000000001      sec
+     --> (GENERA3.f)   End ASPLAS:   179.27700000000002      sec
+          Time used:  0.98300000000000409      sec
+     --> (GENERA3.f) Begin FBSTEP:   179.27700000000002      sec
+     --> (GENERA3.f)   End FBSTEP:   180.24400000000000      sec
+          Time used:  0.96699999999998454      sec
+     element#  67 ( node radius = 0.9830     )
+     --> (GENERA3.f) Begin ASCURL:   180.24400000000000      sec
+     --> (GENERA3.f)   End ASCURL:   180.44700000000000      sec
+          Time used:  0.20300000000000296      sec
+     --> (GENERA3.f) Begin ASPLAS:   180.44700000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   181.52300000000000      sec
+          Time used:   1.0759999999999934      sec
+     --> (GENERA3.f) Begin FBSTEP:   181.52300000000000      sec
+     --> (GENERA3.f)   End FBSTEP:   182.61400000000000      sec
+          Time used:   1.0910000000000082      sec
+     element#  68 ( node radius = 0.9978     )
+     --> (GENERA3.f) Begin ASCURL:   182.61400000000000      sec
+     --> (GENERA3.f)   End ASCURL:   182.86400000000000      sec
+          Time used:  0.25000000000000000      sec
+     --> (GENERA3.f) Begin ASPLAS:   182.86400000000000      sec
+     --> (GENERA3.f)   End ASPLAS:   183.89400000000001      sec
+          Time used:   1.0300000000000011      sec
+     --> (GENERA3.f) Begin FBSTEP:   183.89400000000001      sec
+     --> (GENERA3.f)   End FBSTEP:   185.00200000000001      sec
+          Time used:   1.1080000000000041      sec
+     element#  69 ( node radius =  1.013     )
+     --> (GENERA3.f) Begin ASCURL:   185.00200000000001      sec
+     --> (GENERA3.f)   End ASCURL:   185.23600000000002      sec

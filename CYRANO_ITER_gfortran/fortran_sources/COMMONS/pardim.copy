@@ -1,0 +1,89 @@
+c     Main array dimension declarations
+C     N.B.:this file must be the first INCLUDEd file in all files.
+
+      integer 
+     ;  nficom 
+     ;, ndof, maxspe, npfft, npft2, npfrot, ncorot, maxcpp, maxreg
+     ;, maxsel, maxite, maxspa, maxnel, maxpom, maxtom, maxcou, maxwbl
+     ;, maxant, maxscr, maxscm, maxexc, maxinp, maxthp, maxnlc
+     ;, nbl, maxsub
+     ;, nabplo, nppres, nptosp, nplmtr
+     ;, ntyp, maxdeg, maxbaf, neltyp, maxgau
+     ;, maxsdr, maxncr
+     ;, maxnex, maxnev, maxrdr, maxxre, maxvre, maxxg, maxvg
+
+C     User-tunable:
+c     maxcpp: max. matrix dim. for contour plots
+c     npfrot: only use to dimension polaro, not used!
+c     nplmtr: used in trajectory studies.
+c     maxsdr: max. number of species in general plasma response, <= maxspe
+c     maxncr: max. number of geometrical couplings in plasma response
+c     maxnex: max. number of elements in com x
+c     maxnev: max. number of elements in com v
+c     maxrdr: max. number of magn.surfaces in QLFP code
+c     maxxre: max. number of regions in x grid
+c     maxvre: max. number of regions in v grid
+
+c     Here pocket case:
+      parameter (
+     ;    maxspe=5,  maxsdr=1
+     ;  , npfft=1024, npfrot=64, maxcpp=32, npft2=npfft/2
+     ;  , maxreg=3,  maxsub=5,  maxsel=1
+     ;  , maxnel=300, maxpom=180,  maxtom=1, maxcou=maxpom-1
+     ;  , maxncr=800
+     ;  , maxant=4,  maxscr=1,   maxscm=1
+     ;  , maxinp=4 , maxthp=npfft
+     ;  , nppres = 21
+     ;  , nptosp = 100
+     ;  , nplmtr = 32+1
+     ;  , maxnex = 10, maxnev=10, maxrdr=2
+     ;  , maxxre=4, maxvre=3
+     ;)
+     
+c     Handle with care; don't touch if you don't know...:
+c     ncorot: number of coeffs. in curl.curl + 1 for displacement
+      parameter (
+     ;    nficom=3 
+     ;  , ndof=2*nficom
+     ;  , ncorot=68
+     ;  , maxite=1 , maxspa=1
+     ;  , maxwbl=2*ndof*ndof*maxpom*maxpom
+     ;  , maxexc=maxant+maxscr*maxscm
+     ;  , maxnlc=maxpom*2*ndof-1
+     ;  , nbl   =maxpom*(maxnel+maxreg)
+     ;  , nabplo=(maxinp+1)*maxnel+maxreg
+     ;  , ntyp=2, maxdeg=3, maxbaf=4, neltyp=3, maxgau=4
+     ;  , maxxg=maxxre+maxnex, maxvg=maxvre+maxnev
+     ;)
+c     Careful: MAXGAU and MAXINP not independent!
+c  ! nplmtr: a power of 2 + 1
+c    ;  , maxlda  = maxpom*ndof*(maxnel+2*maxreg+1)
+c    ;  , lda1  =2*maxnlc+1
+c    ;  , lda2  =3*maxnlc+1
+c
+C******************************************************************
+C        Solver parameters:
+C*******************************************************************
+C     User-tunable parameters:
+C
+      integer maxbll, maxnbl, maxrhs, modele, modfac
+C
+C     Maximum problem size parameters:
+C         block length,        number of blocks,      number of r.h.s.,
+C         block input mode,    factorization storage mode:
+      parameter (
+     ;    maxbll=ndof*maxpom,  maxnbl=maxnel+2*maxreg+1
+     ;,   maxrhs=max(2,maxexc)
+     ;,   modele=0,            modfac=0
+     ;)
+C     Maximum number of problems on each Fortran unit:
+      integer maxpro
+      parameter ( maxpro=100 )
+C
+C     Input-output block length (in computer words, an even integer)
+C     and word length in bytes:
+C     Cray value are 512 words per block and 8 bytes per word
+
+      integer iobll, iob2, wordlzz, nwn
+
+      parameter ( iobll=512, iob2=iobll/2, wordlzz=8, nwn=2 )

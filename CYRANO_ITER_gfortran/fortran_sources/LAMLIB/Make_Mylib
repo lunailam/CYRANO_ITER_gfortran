@@ -1,0 +1,7 @@
+rm -rf *.o
+rm -rf *.a
+ 
+pgf90 -O -r8 -Msave -Mextend -I ../COMMONS -c *.f -lblas -llapack -lacml 
+
+ar -r libMyLib.a *.o
+ cp extracted/libExtrac.a ./

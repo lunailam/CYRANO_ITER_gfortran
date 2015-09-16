@@ -1,0 +1,6 @@
+c     Open instruction for PC version of the code; replace by an empty
+c     line on the Cray.
+      open(unit=unqlfp
+     ;, file='..\..\QLFP_data.txt'
+     ;, status='old')
+c

@@ -1,0 +1,58 @@
+c     Geometrical parameters (except antenna dimensions)
+
+      logical cyl, crown, polsym, dshape, geneq, circ, cokpco
+     ;, gloext, mulext(nabplo), updsym, kapprof 
+     ;, STDVAC, cokpco_orig
+
+      integer uds(17), iregoa(nabplo), isuboa(nabplo), npp
+     ;, ishsht, udsck(7)
+
+      complex*16 einphb(nabplo,npfft+1)
+
+      double precision
+     ;  r0, ra, ap, ap2, api, rnorm, rhoant, rhowal, rcrown
+     ;, r, rmr0, rmra, z, rho, phi, y, yinv, rhoinv, epsi
+     ;, rnor0, ror0, r0or, rnor02, r0i, rnori, r0orn
+     ;, abscis(nabplo), abscno(nabplo), abscni(nabplo)
+     ;, polang(npfft+1)
+     ;, polaro(npfrot+1)
+     ;, eqt(nabplo,npfft+1,17), eqta1d(nabplo,10)
+     ;, r0orta(nabplo,npfft+1)
+     ;, ckt(nabplo,npfft+1,7), hachi(nabplo)
+     
+c     D-shape equilibrium coeffs.
+      double precision shsh0, kappa, kappa_orig, delta, shsh
+     ;, z0, zsh, udas
+c     Additional metric coefficients
+      double precision 
+     ;  drrho, drrhoth, drth, drth2, dzrho, dzrhoth, dzth, dzth2 
+     ;, drth2n, dzth2n, nrho2, nt2, nt, g12, jac
+     ;, drthn, dzthn, nt2n, ntn, g12n, jacn, jacav, fn
+     ;, cuno, cn, lambda, newmu
+     ;, qfactor(nabplo), dPsidr_n(nabplo), Psir(nabplo)
+     ;, surf_perim(nabplo)
+      complex*16
+     ;  gcdr1(2*npfft+1,2*maxcou+1)
+     ;, gcdr(-npfft:npfft,-maxcou:maxcou), ernaux(npfft+1)
+
+      equivalence(gcdr1(1,1),gcdr(-npfft,-maxcou))
+
+      common /comgeo/  
+     ;  einphb, eqt, eqta1d
+     ;, r0orta
+     ;, ckt, hachi, gcdr1, ernaux
+     ;, r0, ra, z0, ap, ap2, api, rnorm, rhoant, rhowal, rcrown
+     ;, r, rmr0, rmra, z, rho, phi, y, yinv, rhoinv, epsi
+     ;, rnor0, ror0, r0or, rnor02, r0i, rnori, r0orn
+     ;, shsh0,  kappa,  kappa_orig, delta,  shsh, zsh, udas
+     ;, abscis, abscno, abscni, polang, polaro
+     ;, drrho, drrhoth, drth, drth2, dzrho, dzrhoth, dzth, dzth2
+     ;, nrho2, drth2n, dzth2n, nt2, nt, g12, jac
+     ;, drthn, dzthn, nt2n, ntn, g12n, jacn, jacav, fn, cuno
+     ;, cn, lambda, newmu
+     ;, qfactor, dPsidr_n, Psir, surf_perim
+     ;, uds
+     ;, iregoa, isuboa, npp
+     ;, ishsht, udsck
+     ;, crown, cyl, polsym, dshape, geneq, circ, cokpco
+     ;, gloext, mulext, updsym, kapprof, STDVAC, cokpco_orig

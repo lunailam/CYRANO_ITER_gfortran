@@ -1,0 +1,38 @@
+
+      LOGICAL INTRES(4), SKIPK, REFINT, AUTOME, KILLMO
+     ;, giplas, lefnod, gicurl, gigdr
+
+      INTEGER NINTV, NHA, NGPOL, NGPOLR, KTHRES, NGAUSS, NSUBIN, NSUBIR
+
+      DOUBLE PRECISION 
+     ;  BAFG(21,0:MAXGAU+1), AGA(0:MAXGAU+1), WGA(MAXGAU)
+     ;, LDIF(6,12,0:MAXGAU), LDIF1(6*12*(1+MAXGAU))
+     ;, BAFGN(MAXBAF,0:2,NTYP,0:MAXGAU+1)
+     ;, BAFSIN(MAXBAF,0:1,NTYP,0:MAXGAU+1)
+     ;, KEQRES, PHILIM, TRES, DTRES, EXPFAC
+     ;, ELPWL, ELPDL, ELPWCO, LELMIN, LELMAX, LELEDG, DAMCUT
+     ;, XINTE(0:MAXGAU), XBOU, RRATIO
+     ;, prodin(maxbaf,0:1,ntyp,maxbaf,0:1,ntyp,-1:1)
+     ;, bafint(maxbaf,0:1,ntyp,0:1)
+     ;, prods(maxbaf,0:1,0:1,maxbaf,0:1,0:1)
+
+      EQUIVALENCE (LDIF1, LDIF(1,1,0))
+
+      COMMON /COMIN2/
+     ;  BAFG, BAFGN, BAFSIN, AGA, WGA, LDIF
+     ;, prodin, bafint, prods
+     ;, KEQRES, PHILIM, TRES, DTRES, EXPFAC
+     ;, ELPWL, ELPDL, ELPWCO, LELMIN, LELMAX, LELEDG, DAMCUT
+     ;, XINTE, XBOU, RRATIO
+     ;, NINTV, NHA, NGPOL, NGPOLR, KTHRES
+     ;, NGAUSS, NSUBIN, NSUBIR
+     ;, INTRES, SKIPK, REFINT, AUTOME, KILLMO
+     ;, giplas, lefnod, gicurl, gigdr
+
+C               NGAUSS: DEGREE OF (Y) GAUSSIAN INTEGRATION
+C               BAFG: BASIS FUNCTIONS AND DERIVATIVES AT
+C               GAUSSIAN POINTS (INDEX 0 = AT MAGNETIC AXIS)
+C               BAFGN: SAME WITH DIFFERENT STORAGE (NEW)
+C               AGA:  ABSCISSAE FOR GAUSSIAN INTEGRATION (0,1)
+C               WGA: WEIGHTS FOR GAUSSIAN INTEGRATION (0,1)
+

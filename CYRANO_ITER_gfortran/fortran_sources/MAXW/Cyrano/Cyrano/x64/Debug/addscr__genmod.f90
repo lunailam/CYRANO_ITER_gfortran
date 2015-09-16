@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:31:32 2012
+        MODULE ADDSCR__genmod
+          INTERFACE 
+            SUBROUTINE ADDSCR
+            END SUBROUTINE ADDSCR
+          END INTERFACE 
+        END MODULE ADDSCR__genmod

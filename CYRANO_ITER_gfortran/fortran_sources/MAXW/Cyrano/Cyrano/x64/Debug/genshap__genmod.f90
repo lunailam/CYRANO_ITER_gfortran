@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:33:15 2012
+        MODULE GENSHAP__genmod
+          INTERFACE 
+            SUBROUTINE GENSHAP(K)
+              INTEGER(KIND=4), INTENT(IN) :: K
+            END SUBROUTINE GENSHAP
+          END INTERFACE 
+        END MODULE GENSHAP__genmod

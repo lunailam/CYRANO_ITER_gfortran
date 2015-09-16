@@ -1,0 +1,76 @@
+c     Antenna parameters
+
+      logical
+     ;  monoto, monomo, feeder(maxant), falen(maxant), any_falen
+     ;, vscrsh(maxscr)
+     ;, normap
+     ;, udsant(maxexc), samant
+     ;, coktorcur
+
+      character*3 antyp(maxant), anetyp(maxant)
+
+      integer 
+     ;  ntoant, neffan, ntotor, nmoant, nscree, nmoscr
+     ;, irbant(maxant), irbscr(maxscr), nsclam(maxscr)
+     ;, moant(maxpom), moscr(maxscm)
+     ;, irscrm
+     ;, ipolin(maxant), ipolou(maxant)
+
+      double precision
+     ;  phiaa(maxant), dphia(maxant), motoan(maxtom)
+     ;, zaa(maxant), dza(maxant)
+     ;, dthea(maxant), thea1(maxant), thea2(maxant) 
+     ;, theaa(maxant)
+     ;, dthes(maxscr), thes1(maxscr), thes2(maxscr)
+     ;, theas(maxscr)
+     ;, dtheab(maxant), theab1(maxant), theab2(maxant)
+     ;, thba(maxant)
+     ;, phibarac(maxant)
+     ;, dthesb(maxscr), thesb1(maxscr), thesb2(maxscr)
+     ;, thbs(maxscr)
+     ;, phibarsc(maxscr)
+     ;, lamwid(maxscr)
+     ;, ktoan(maxtom)
+     ;, raprio(maxant), laprio(maxant), caprio(maxant)
+     ;, zcapri(maxant), walres, skiwal
+     ;, rfpow
+
+      complex*16
+     ;  tancur(maxant)
+     ;, cura(maxpom, maxexc)
+     ;, chaa(maxpom, maxexc), rcura(maxpom, maxexc)
+     ;, rcurac(maxpom, maxexc), rcuras(maxpom, maxexc)
+     ;, curat(maxpom, maxexc), rcurat(maxpom, maxexc)
+     ;, curare(7*maxpom*maxexc)
+     ;, juant(6, maxpom, maxexc)
+     ;, deltaa(maxant), zap(maxant), betal(maxant)
+
+      equivalence (curare, cura), 
+     ;(curare(maxpom*maxexc+1), rcura), 
+     ;(curare(2*maxpom*maxexc+1), curat), 
+     ;(curare(3*maxpom*maxexc+1), rcurat), 
+     ;(curare(4*maxpom*maxexc+1), chaa),
+     ;(curare(5*maxpom*maxexc+1), rcurac), 
+     ;(curare(6*maxpom*maxexc+1), rcuras)
+
+      common /comant/
+     ;  tancur, curare, juant, deltaa, zap, betal
+     ;, raprio, laprio, caprio
+     ;, zcapri, walres, skiwal
+     ;, rfpow
+     ;, thea1, thea2, theaa, dthea
+     ;, zaa, dza, phiaa, dphia, motoan, ktoan
+     ;, thes1, thes2, theas, dthes, lamwid
+     ;, theab1, theab2, thba, dtheab, phibarac
+     ;, thesb1, thesb2, thbs, dthesb, phibarsc
+     ;, irscrm, nsclam, moscr
+     ;, ipolin, ipolou
+     ;, ntoant, neffan, irbant, irbscr, nmoant, moant, ntotor
+     ;, nscree, nmoscr
+     ;, monoto, monomo, feeder, falen, any_falen, vscrsh
+     ;, normap
+     ;, udsant, samant
+     ;, coktorcur
+
+      common /coman2/
+     ;  antyp, anetyp

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd LAMLIB/
+rm *.o
+rm -rf libMyLib.a
+pgf90 -fpic -O2 -r8 -Msave -Mextend -I ../COMMONS -c *.f -lblas -llapack -lacml
+ar -r libMyLib.a *.o
+cd ..
+pgf90 -fpic -O2 -r8 -Msave -Mextend -I COMMONS -L LAMLIB -o Cyrano Cyrano.f -lMyLib -lExtrac -lblas -lacml

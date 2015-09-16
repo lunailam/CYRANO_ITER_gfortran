@@ -1,0 +1,319 @@
+'JET ' 
+ &NAMOUT
+  machin='PC',
+  wridat=.false., wrplta=.false., wrisol=.false.,
+  wrifou=.false., nfouwr=0, ifouwr=3,4,5,6,8,10,
+  replay=.false.,
+  distes=.false.,
+  unitgl=40, unitrh=41, unitem=42,
+  numdis=.false.,
+  keepso=.false.,ploold=.false.,nolifi=60,nolofi=60,
+  unqlfp=50, undirk=51,
+ &END
+
+ &NAMPLO
+  igrdev=0,
+  transp=.false.,notrsp=25,
+  outgau=.true.,ninter=4,ncomp=4,spline=.false.,splfac=0.011,
+  xcm=24.,ycm=20.,
+  xmin=666.,xmax=666.,ymin=666.,ymax=666.,
+  nkurv=2,isk=2,jsk=2,
+  plosol=.true.,plopow=.true.,
+  plot2d=.true.,
+  nploth=256,
+  niso=15,
+  ploty(1,1)= .true., .true., .false., .true., .true., .false.,
+              .true., .true., .false.,
+            6*.false.,
+              .true., .true., .false.,
+            2*.false., .true., 2*.false.,.true.,
+              .false.,.false.,.true.,
+  nfiell=20,
+  ploana=.false.,
+  plosta=.false.,ploeve=.false.,
+ &END
+
+For future implementation in namelists:
+  READ_GENERAL  = .false.,
+  READ_FLUX     = .false.,
+  READ_PROFILES = .false.,
+  SAME_TEMP = .false.,
+  SAME_DENS = .false.,
+
+ 
+ &NAMGEO
+  dshape=.true., geneq=.false.,
+  cyl=   .false.,
+  r0=     6.2d0,
+  z0=     0.0d0,
+  polsym=.false.,
+  cokpco=.false.,
+ &END
+
+ &NAMMAG
+  kappa=1.5d0, shsh0=0.1, ishsht=1, delta=0.1d0,
+  b0=2.65,
+  ipl=7.5d6, alpha=3d0,
+  nintps=10,
+ &END
+
+ &NAMPLA
+  vacuum=.false.,2*.true.,
+  coldpl(1)=.false.,2*.true.,
+  flrops(1)=.true.,2*.false.,
+  plstep(1)=.true.,
+
+  sccol(1)=.false.,
+  damp(1,1)=3*0.d0,
+
+  quasis=.false.,
+
+  nspec=4, 
+
+  nspgdr=0, ispgdr(1)=2, isotro(1)=.false., maxwdr(1)=.true., rqlral=.true.,
+  relati(1)=3*.false.,
+  ispres=2,nha=1,xbou=8.d0,rratio=0.25,
+
+  zch(1)=            -1.,       2.,        1.,   1.,          2.,
+  amass(1)= 5.446623d-04,     4.d0,      1.d0,   1.000001d0,  4.0d0,
+
+  t0(1,1)=	    6.2d3,   6.2d3,      6.2d3,    150.0d3,   1.2d6,
+  tb(1,1)=          0.2d3,   0.2d3,      0.2d3,    0.2d3,    0.5d2,
+  itexp(1,1)=       2.0,     2.0,        2.0,      2.0,       0.1,
+
+  v0alph= 1.84e6, udrift=1.d6,
+  equidn(1)= 3*0,
+  usenma=.false.,
+
+  n0(1,1)=0.49d0,
+  nb(1,1)=0.32d0,
+  spefra(1,1)=       1.,      45.0d-2,     10d-2,  0.000001d-2, 0.5d-2,
+  idexp(1)=          0.55,
+  i_special(1)=	     0,       0,	   0,	   1,           0,
+  CONCFAC = 0.0
+
+  ninscr=0., tinscr=0.,
+ &END
+
+  thea1(1)=4*-0.52359877559830, thea2(1)=4*0.38397243543875, zaa(1)=-0.55, 
+
+ &NAMANT
+  fregag=40.0d6,
+  ntoant=4, samant=.true., antyn=4*5, anetyn=4*1, irbant(1)=4*2,
+  feeder(1)=4*.true.,
+  thea1(1)=4*-0.463, thea2(1)=4*0.463, zaa(1)=-0.55, 
+  dza(1)=4*0.2, zaa(2)=-0.18, zaa(3)=0.18, zaa(4)=0.5,
+
+  monoto=.true., motoan(1)=33, kparze=1.d-8,
+  motov1=0,motov2=0,motovs=1,
+  ktoan(1)=3.,ktoans=0.,ntotor=1,
+
+  monomo=.false.,moant(1)=3,
+  modva1=-12,modva2=12,
+
+  tancur(1)=(1.d0,0.d0),(-1.d0,0.d0),(1.d0,0.d0),(-1.d0,0.d0),
+
+  normap=.false.,rfpow=0.82d6,
+
+  falen(1)=4*.false.,
+  raprio(1)=4*0.d0,laprio(1)=4*270.d-9,caprio(1)=4*141.d-12,
+
+  nscree=0,
+
+  walres=72.d-8,
+ &END
+
+ &NAMREG
+  nreg=3, ns(1)=3,1,1,
+  rx0m(0) =  0.,         2.0,      2.15,        2.2,
+  dobtyp(2) =                                -2,
+ &END
+
+ &NAMSUB
+  istyp(1) =    1,1,1,2,2,   
+  sx0m(0) =  0., 0.03, 1.90,   2.0,      2.15,        2.2,
+  iele(1) =   1,     360,   20,     40,         40 ,
+ &END
+
+ &NAMPOM
+  mstud1=-2,mstud2=2,mstust=1,
+ &END
+
+ &NAMSYS
+  soldoc=.true.,
+  autome=.false., killmo=.true., elpwl=4., elpdl=4., damcut=1.d-4,
+  lelmin=5.d-4, leledg=2.d-3,
+  scale=.false.,
+  ncrot=64,
+  klim=24,
+  nftnr=64,
+  ncresp=800,
+  ngauss=4,
+  ngaux=5, ngauv=4,
+  wripoi=.false., wriblo=.false.,
+  wbc3=.false., bulfce=.true.,
+  bcinb1=.true., 
+  nabcap=.true., bccase=0,
+  stomat=.false., 
+  recalc_total=.false., onlyab=.false., 
+  rawel1=.false., 
+  recalc_by_species=.false.,
+  giplas=.true., gicurl=.true., gigdr=.false.,
+ &END
+
+
+ '     '
+ &NAMOUT &END
+ &NAMPLO &END
+ &NAMGEO
+ &END
+ &NAMMAG
+ &END
+ &NAMPLA
+  spefra(1,1)=       1.,      45.0d-2,     9.5d-2,  0.5d-2, 0.0d-2,
+  CONCFAC = 0.5
+ &END
+ &NAMANT
+ &END
+ &NAMREG
+ &END
+ &NAMSUB
+ &END
+ &NAMPOM
+ &END
+ &NAMSYS
+ &END
+
+ '     '
+ &NAMOUT &END
+ &NAMPLO &END
+ &NAMGEO
+ &END
+ &NAMMAG
+ &END
+ &NAMPLA
+  spefra(1,1)=       1.,      45.0d-2,     9d-2,  1d-2, 0.0d-2,
+  CONCFAC = 1.0
+ &END
+ &NAMANT
+ &END
+ &NAMREG
+ &END
+ &NAMSUB
+ &END
+ &NAMPOM
+ &END
+ &NAMSYS
+ &END
+
+ '     '
+ &NAMOUT &END
+ &NAMPLO &END
+ &NAMGEO
+ &END
+ &NAMMAG
+ &END
+ &NAMPLA
+  spefra(1,1)=       1.,      45.0d-2,     8d-2,  2d-2, 0.5d-2,
+  CONCFAC = 2.0
+ &END
+ &NAMANT
+ &END
+ &NAMREG
+ &END
+ &NAMSUB
+ &END
+ &NAMPOM
+ &END
+ &NAMSYS
+ &END
+
+ '     '
+ &NAMOUT &END
+ &NAMPLO &END
+ &NAMGEO
+ &END
+ &NAMMAG
+ &END
+ &NAMPLA
+  spefra(1,1)=       1.,      45.0d-2,     7d-2,  3d-2, 0.0d-2,
+  CONCFAC = 3.0
+ &END
+ &NAMANT
+ &END
+ &NAMREG
+ &END
+ &NAMSUB
+ &END
+ &NAMPOM
+ &END
+ &NAMSYS
+ &END
+
+
+ '     '
+ &NAMOUT &END
+ &NAMPLO &END
+ &NAMGEO
+ &END
+ &NAMMAG
+ &END
+ &NAMPLA
+  spefra(1,1)=       1.,      45.0d-2,     6d-2,  4d-2, 0.0d-2,
+  CONCFAC = 4.0
+ &END
+ &NAMANT
+ &END
+ &NAMREG
+ &END
+ &NAMSUB
+ &END
+ &NAMPOM
+ &END
+ &NAMSYS
+ &END
+
+ '     '
+ &NAMOUT &END
+ &NAMPLO &END
+ &NAMGEO
+ &END
+ &NAMMAG
+ &END
+ &NAMPLA
+  spefra(1,1)=       1.,      45.0d-2,     5d-2,  5d-2, 0.0d-2,
+  CONCFAC = 5.0
+ &END
+ &NAMANT
+ &END
+ &NAMREG
+ &END
+ &NAMSUB
+ &END
+ &NAMPOM
+ &END
+ &NAMSYS
+ &END
+
+ '     '
+ &NAMOUT &END
+ &NAMPLO &END
+ &NAMGEO
+ &END
+ &NAMMAG
+ &END
+ &NAMPLA
+  spefra(1,1)=       1.,      45.0d-2,     0d-2,  10d-2, 0.0d-2,
+  CONCFAC = 10.0
+ &END
+ &NAMANT
+ &END
+ &NAMREG
+ &END
+ &NAMSUB
+ &END
+ &NAMPOM
+ &END
+ &NAMSYS
+ &END
+

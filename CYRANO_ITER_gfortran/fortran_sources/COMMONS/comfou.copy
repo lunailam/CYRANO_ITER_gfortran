@@ -1,0 +1,36 @@
+
+C    - Analytical Fourier coeffs. for curl.curl (circular concentric)
+C      (N.B.:  FSY=F/Y); notations: f(k) corresponds to f(-k) in thesis
+C      Appendix 1.
+C    - Numerical coefficients in D-shape or general geometry.
+
+      double precision 
+     ;  afou(-maxcou:maxcou), bfou(-maxcou:maxcou+2)
+     ;, cfou(-maxcou:maxcou)
+     ;, dfou(-maxcou:maxcou), efou(-maxcou:maxcou)
+     ;, fsyfou(-maxcou:maxcou)
+     ;, gfou(-maxcou:maxcou), hfou(-maxcou:maxcou)
+     ;, jfou(-maxcou:maxcou)
+cPL28/1/2005 to store negative harmonics of analytical circular coefficients
+c     ;  afou(0:maxcou), bfou(-1:maxcou+2), cfou(0:maxcou)
+c     ;, dfou(0:maxcou), efou(0:maxcou), fsyfou(0:maxcou)
+c     ;, gfou(0:maxcou), hfou(0:maxcou), jfou(0:maxcou)
+
+	complex*16 ::  acokfou(-npfft/2:npfft+1),
+     ;               bcokfou(-npfft/2:npfft+1),
+     ;               ccokfou(-npfft/2:npfft+1), 
+     ;		     dcokfou(-npfft/2:npfft+1),
+     ;               ecokfou(-npfft/2:npfft+1), 
+     ;               fcokfou(-npfft/2:npfft+1),
+     ;               gcokfou(-npfft/2:npfft+1)
+
+      complex*16
+     ;  cvec(3*npfft/2+1,ncorot), cvc(-npfft/2:npfft,ncorot)
+
+      equivalence (cvec,cvc)
+      
+      common /comfou/
+     ;  afou, bfou, cfou, dfou, efou, fsyfou, gfou, hfou, jfou
+     ;, cvec, acokfou, bcokfou, ccokfou, dcokfou, ecokfou
+     ;, fcokfou, gcokfou
+

@@ -1,0 +1,8 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:38:12 2012
+        MODULE FOUCOJ__genmod
+          INTERFACE 
+            SUBROUTINE FOUCOJ(RTP)
+              LOGICAL(KIND=4) :: RTP
+            END SUBROUTINE FOUCOJ
+          END INTERFACE 
+        END MODULE FOUCOJ__genmod

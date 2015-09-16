@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:36:24 2012
+        MODULE OUTRFF__genmod
+          INTERFACE 
+            SUBROUTINE OUTRFF
+            END SUBROUTINE OUTRFF
+          END INTERFACE 
+        END MODULE OUTRFF__genmod

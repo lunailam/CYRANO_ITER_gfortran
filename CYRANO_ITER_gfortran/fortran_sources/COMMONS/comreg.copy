@@ -1,0 +1,21 @@
+      logical          passiv(0:maxreg)
+
+      integer          nreg, nrpar(maxreg), ns(maxreg), gloshi(maxreg+1)
+     ;               , ifiel(maxreg), ilael(maxreg), ncstr(0:maxreg)
+
+      character*3      rtyp(maxreg), rbtyp(0:maxreg)
+
+      double precision rx0(0:maxreg), rl(maxreg), rparam(1,maxreg)
+     ;               , rx0m(0:maxreg), rbpar(1,maxreg), rxl
+
+cc    logical alinde
+
+      common/comreg/
+     ;               rx0m, rx0, rl, rparam, rbpar, ns, nreg, nrpar
+     ;             , gloshi, ifiel, ilael, ncstr, passiv
+
+      common/comre2/ rbtyp, rtyp
+
+cc    common/comre3/ alinde
+
+      equivalence (rxl,rx0(0))

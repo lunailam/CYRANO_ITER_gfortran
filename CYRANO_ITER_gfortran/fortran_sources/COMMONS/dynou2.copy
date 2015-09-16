@@ -1,0 +1,45 @@
+c     2D plot table:
+      double precision 
+     ;  tab(maxthp+1,nabplo,3), tab2((maxthp+1)*nabplo*3)
+      equivalence (tab,tab2)
+
+c     From OUTPUT:
+      double precision 
+     ;  tablo(nabplo,maxpom), tablo2(nabplo*maxpom)
+     ;, bmlvec(maxthp+1), r0rvec(maxthp+1), siv(maxthp+1), cov(maxthp+1)
+     ;, ntnt(maxthp+1)
+     ;, elpow(maxnel), cumpow(0:maxnel)
+
+      equivalence (tablo, tablo2)
+
+      complex*16
+     ;  eloc(ndof-1,maxthp), epmloc(ndof,maxthp)
+     ;, hloc(nficom,maxthp), elocth(nficom,maxthp)
+     ;, tabexp(maxpom,maxthp+1), copisi(maxthp+1)
+     ;, xrtp(ndof-1,nabplo,maxpom)
+     ;, xpmp(ndof,nabplo,maxpom), xpmp2(nficom,nabplo,maxpom)
+     ;, hrtp(nficom,nabplo,maxpom)
+     ;, poynt(maxpom,nabplo)
+     ;, anartp(3,nabplo)
+     ;, v2(0:npfft-1,19), v3(maxthp,19)
+     ;, bel(maxbll,maxrhs), bel1(((maxbll*maxrhs)/iob2+1)*iob2)
+     ;, ber(maxbll,maxrhs), ber1(((maxbll*maxrhs)/iob2+1)*iob2)
+     ;, xrtpb(ndof-1,maxreg,maxpom,maxexc,maxtom)
+     ;, zimp(maxant,maxant,maxtom)
+     ;, erpa(maxpom)
+     ;, solvec(2*maxbll)
+     ;, poydir(maxreg), poydie(maxnbl)
+
+      equivalence (bel,bel1), (ber,ber1)
+
+      common /comusr/ 
+     ;  bel1, ber1
+     ;, xrtpb, zimp
+     ;, tabexp, copisi
+     ;, tab, tablo, eloc, epmloc, hloc, elocth
+     ;, v2, v3, anartp, poynt
+     ;, xrtp, hrtp, xpmp, xpmp2
+     ;, bmlvec, r0rvec, siv, cov, ntnt
+     ;, erpa
+     ;, solvec
+     ;, poydir, poydie, elpow, cumpow

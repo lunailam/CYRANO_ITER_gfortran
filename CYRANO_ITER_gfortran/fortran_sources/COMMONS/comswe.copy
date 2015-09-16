@@ -1,0 +1,10 @@
+      logical coljum
+
+      integer ireg, istart, isubr, iloele, imain, iel, ig, ithoma
+     ;, imoto, ielm, intab, itainc, intabp
+
+      common /comswe/
+     ;  ireg, istart, isubr, iloele, imain, iel, ig, ithoma
+     ;, imoto, ielm, intab, itainc, intabp
+     ;, coljum
+

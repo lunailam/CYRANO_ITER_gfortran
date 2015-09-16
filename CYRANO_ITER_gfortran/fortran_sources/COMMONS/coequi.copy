@@ -1,0 +1,39 @@
+C     General equilibrium definitions
+
+      real*8 ::  rhoR_flu(100), rhoZ_flu(100),
+     ;           rhoB_flu(100), rhoP_flu(100), rhoQ_flu(100),
+     ;           R_flu(100,257), Z_flu(100,257), 
+     ;           Btor_flu(100,257), Pitch_flu(100,257),
+     ;           R0_flu(100), R1_flu(100), R2_flu(100),
+     ;           R3_flu(100), R4_flu(100), Z0_flu(100),
+     ;           KAP_flu(100), Q_flu(100), ap_flu
+      real*8 ::  R0_cyr(5*maxnel), R1_cyr(5*maxnel),
+     ;           R2_cyr(5*maxnel),
+     ;           R3_cyr(5*maxnel), R4_cyr(5*maxnel), 
+     ;           Z0_cyr(5*maxnel),
+     ;           KAP_cyr(5*maxnel)
+      real*8 ::  dR0_cyr(5*maxnel), dR1_cyr(5*maxnel), 
+     ;           dR2_cyr(5*maxnel),
+     ;           dR3_cyr(5*maxnel), dR4_cyr(5*maxnel), 
+     ;           dZ0_cyr(5*maxnel),
+     ;           dKAP_cyr(5*maxnel), auxfpol(200)
+      integer :: i_rp, i_ran, i_rw, Nrad_flu, SHOT
+      logical :: READ_FLUX, READ_PROFILES, READ_GENERAL,
+     ;           READ_JTOR,
+     ;           SAME_DENS, SAME_TEMP
+      real*8 :: Rgeo, Zgeo, Raxis, Zaxis, Rw_1, Rw_2, instant
+
+
+      COMMON/COEQUI/rhoR_flu, rhoZ_flu, rhoB_flu, rhoP_flu, rhoQ_flu,
+     ;              R_flu, Z_flu, Btor_flu, Pitch_flu, Q_flu,
+     ;              R0_flu, R1_flu, R2_flu, R3_flu, R4_flu, ap_flu,
+     ;              Z0_flu,KAP_flu, R0_cyr, R1_cyr, R2_cyr, 
+     ;              R3_cyr, R4_cyr, Z0_cyr, KAP_cyr,
+     ;              dR0_cyr, dR1_cyr, dR2_cyr, 
+     ;              dR3_cyr, dR4_cyr, dZ0_cyr, dKAP_cyr, auxfpol,
+     ;              Rgeo, Zgeo, Raxis, Zaxis, Rw_1,Rw_2,instant,
+     ;              i_rp, i_ran, i_rw, Nrad_flu, SHOT, READ_FLUX, 
+     ;              READ_JTOR,
+     ;              READ_PROFILES, READ_GENERAL, SAME_DENS, 
+     ;              SAME_TEMP
+

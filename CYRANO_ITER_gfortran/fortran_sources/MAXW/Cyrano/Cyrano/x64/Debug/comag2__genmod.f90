@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:33:44 2012
+        MODULE COMAG2__genmod
+          INTERFACE 
+            SUBROUTINE COMAG2
+            END SUBROUTINE COMAG2
+          END INTERFACE 
+        END MODULE COMAG2__genmod

@@ -1,0 +1,5 @@
+c     Open instruction for PC version of the code; replace by an empty
+c     line on the Cray.
+      open(unit=66
+     ;, file = paplda // 'Pol_Fourier', status='unknown')
+c

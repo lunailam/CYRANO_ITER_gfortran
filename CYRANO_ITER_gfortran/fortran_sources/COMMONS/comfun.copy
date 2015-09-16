@@ -1,0 +1,4 @@
+C        Used in characteristic surfaces functions
+         INTEGER ISPE, LRES
+
+         COMMON /COMFUN/ ISPE, LRES

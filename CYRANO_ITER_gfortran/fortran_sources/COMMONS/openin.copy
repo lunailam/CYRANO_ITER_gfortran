@@ -1,0 +1,13 @@
+c     Open instruction for PC version of the code; replace by an empty
+c     line on the Cray.
+c     Compaq QuickWin version: empty file name to open dialog box:
+      open(unit=nifile, iostat=ioerr, file='', status='old')
+
+      if(ioerr.ne.0) then
+	  write(nofile,*)'Run data input from file ', iofnam
+
+      open(unit=nifile,iostat=ioerr
+     ;, file=iofnam
+     ;, status='old')
+
+      endif

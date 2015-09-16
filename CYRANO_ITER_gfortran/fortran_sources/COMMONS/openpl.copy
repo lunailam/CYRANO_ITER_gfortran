@@ -1,0 +1,30 @@
+cPL9/4/2004:
+
+
+c     Open instruction for PC version of the code; replace by an empty
+c     line on the Cray.
+cERN      open(unit=70
+cERN     ;, file = paplda // 'Densities', status='unknown')
+cERN      open(unit=71
+cERN     ;, file = paplda // 'Temperatures', status='unknown')
+cERN      open(unit=72
+cERN     ;, file = paplda // '1D_B0', status='unknown')
+cERN      open(unit=73
+cERN     ;, file = paplda // 'q and psi', status='unknown')
+cERN      open(unit=74
+cERN     ;, file = paplda // 'Roots', status='unknown')
+c2004      open(unit=75
+c2004     ;, file = paplda // '1D_Fields', status='unknown')
+cERN      open(unit=76
+cERN     ;, file = paplda // '2D_RF_Mesh', status='unknown')
+cERN      open(unit=77
+cERN     ;, file = paplda // '2D_Char_Surfaces', status='unknown')
+c2004      open(unit=78
+c2004     ;, file = paplda // '2D_RF', status='unknown')
+c2004      open(unit=79
+c2004     ;, file = paplda // '2D_Mode_Norms', status='unknown')
+c      open(unit=80
+c     ;, file = paplda // 'Element power balance', status='unknown')
+c
+c     NB: unit 80 now open and closed where needed; 
+c         unit 82 is also used

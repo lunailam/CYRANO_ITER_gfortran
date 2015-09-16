@@ -1,0 +1,30 @@
+c     Finite elements localization + radial abscissae
+
+      integer mndexs(maxnel), mndexr(maxnel), locel(1,maxnel)
+     ;, nele, imax
+     ;, na, nabsci
+     ;, nbafel(nficom,neltyp), ibafty(nficom,neltyp)
+     ;, nbaf(ntyp), deg(ntyp), leadeg(maxbaf,ntyp)
+     ;, jbfloc(maxbaf,nficom)
+     ;, ideriv(maxbaf,ntyp), inotyp(maxbaf,ntyp)
+     ;, ng(ntyp), nm(ntyp), nd(ntyp)
+     ;, ifiabs(maxnel)
+
+      double precision fx0(0:maxnel), fl(maxnel), fparam(maxnel,1)
+     ;, fxl
+     ;, rlpow(-2:3)
+     ;, eltvol(maxnel)
+
+      common /comfin/
+     ;  fx0, fl
+     ;, fparam
+     ;, rlpow
+     ;, eltvol
+     ;, mndexs, mndexr, locel
+     ;, nele, imax, na, nabsci
+     ;, nbafel, ibafty, nbaf, deg, leadeg, jbfloc, ideriv, inotyp
+     ;, ng, nm, nd
+     ;, ifiabs
+
+      equivalence (fx0(0),fxl)
+

@@ -1,0 +1,6 @@
+      real*8 coeimp
+
+      complex*16 zimpto(maxant,maxant), zimp3(maxant,maxant,maxtom)
+     ;, zimpfe(maxant,maxant,maxtom) 
+
+      common /com3di/ zimpto, zimp3, zimpfe, coeimp

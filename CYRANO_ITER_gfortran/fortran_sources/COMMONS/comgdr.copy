@@ -1,0 +1,131 @@
+      logical isotro(maxsdr), maxwdr(maxsdr), rqlral, DIRK, 
+     ;        only_active
+      
+      character(200) :: QLFPDIR
+
+      integer
+     ;  unqlfp, undirk, unbblo
+     ;, nxgreg, nvgreg, ngaux, ngauv
+     ;, ielrx(maxxre), ielrv(maxvre), nabsx, nabsv, nraddr
+     ;, nelrx, nelrv
+     ;, lxg, lvg
+     ;, igl(4), idl(4)
+     ;, ifielx(maxxre), ilaelx(maxxre), ifielv(maxvre)
+     ;, ilaelv(maxvre)
+     ;, irafp(maxrdr)
+     ;, ifiax(maxxre), ifiav(maxvre), ilaax(maxxre)
+     ;, ilaav(maxvre)
+     ;, ixt(maxxg,2), ivt(maxvg,2)
+     ;, irxoa(maxxg), irvoa(maxvg)
+     ;, intaqlfp(maxrdr)
+     ;, ithemaxchi(1001), Nth_oi    
+     
+      double precision 
+     ;  xgrid(maxxg), xngrid(maxxg), vgrid(maxvg)
+     ;, xgta(maxxg,maxrdr), xngta(maxxg,maxrdr)
+     ;, vgta(maxvg,maxrdr)
+     ;, xlel(maxnex), vlel(maxnev), xlelr(maxxre)
+     ;, vlelr(maxvre)
+     ;, xlpo(-1:2,maxxre), vlpo(-1:2,maxvre)
+     ;, xlelg(maxxre,maxrdr), vlelg(maxvre,maxrdr)
+     ;, xngaug(maxnex*5), vgaug(maxnev*5)
+     ;, raqlfp(maxrdr)
+     ;, vrb(0:maxvre,maxrdr), xnb(0:maxxre,maxrdr)
+     ;, vrbl(0:maxvre), xnbl(0:maxxre)
+     ;, F0(maxxg,maxvg,maxrdr,4,maxsdr)
+     ;, F0i(maxxg,maxvg,4,maxsdr)
+     ;, agax(5), wgax(5), agav(5), wgav(5), wgavx(5,5)
+     ;, bibj(4,4,5,5), bipbj(4,4,5,5), bibjp(4,4,5,5)
+     ;, wbibj(4,4,5,5), wbipbj(4,4,5,5), wbibjp(4,4,5,5)
+     ;, f0gp(5,5), f0vgp(5,5), f0xgp(5,5)
+     ;, f0l(maxrdr,4)
+     ;, bafgnx(maxbaf,0:2,5), bafgnv(maxbaf,0:2,5)
+     ;, bafgxs(maxbaf,0:1,5), bafgvs(maxbaf,0:1,5)
+     ;, bflnx(maxbaf,0:2,maxxg,2), bflnv(maxbaf,0:2,maxvg,2)
+     ;, bflxs(maxbaf,0:1,maxxg,2), bflvs(maxbaf,0:1,maxvg,2)
+     ;, allkpa(2*maxpom-1)
+     ;, xnsep, VNOW, XNOW, sigNOW, qomNOW, kpNOW, mavNOW
+     ;, norma1(4,4), norma2(4,4), norma3(4,4), norma4(4,4)
+     ;, xtab(1001), Etab(1001), Ktab(1001), N0tab(1001)
+     ;, N1tab(1001), xtabchi(1001), theta_max(1001)
+     ;, cosXMtab(1001), kefftab(1001), aatab(1001)
+     ;, a2mb2(1001), NL(0:200,1001), activex(20-1,maxvg,501,-10:10)
+      
+      common /comgdr/
+     ;  xgrid, xngrid, vgrid, xgta, xngta, vgta, xlel
+     ;, vlel, xlelr, vlelr
+     ;, xlpo, vlpo
+     ;, xlelg, vlelg, xngaug, vgaug
+     ;, raqlfp, vrb, xnb, vrbl, xnbl
+     ;, F0, F0i
+     ;, agax, wgax, agav, wgav, wgavx
+     ;, bibj, bipbj, bibjp
+     ;, wbibj, wbipbj, wbibjp, f0gp, f0vgp, f0xgp, f0l
+     ;, bafgnx, bafgnv, bafgxs, bafgvs
+     ;, bflnx, bflnv, bflxs, bflvs
+     ;, allkpa, activex
+     ;, xnsep, VNOW, XNOW, sigNOW, qomNOW, kpNOW, mavNOW
+     ;, xtab, Etab, Ktab, N0tab, N1tab, cosXMtab, kefftab
+     ;, aatab, a2mb2, NL, xtabchi, theta_max
+     ;, norma1, norma2, norma3, norma4
+     ;, unqlfp, undirk, unbblo
+     ;, nxgreg, nvgreg, ngaux, ngauv
+     ;, ielrx, ielrv, nabsx, nabsv, nraddr, nelrx, nelrv
+     ;, lxg, lvg, igl, idl, ithemaxchi
+     ;, ifielx, ilaelx, ifielv, ilaelv, irafp, intaqlfp
+     ;, ifiax, ifiav, ilaax, ilaav, ixt, ivt, irxoa, irvoa, Nth_oi
+     ;, isotro, maxwdr, rqlral, DIRK, only_active, QLFPDIR
+
+
+c isotro: for each species having a general diel. response, true if f0 is 
+c     isotropic
+c maxwdr: for each species having a general diel. response, true if f0 is 
+c     Maxwellian (for runs without QLFP or initial step of QL iteration)
+c DEVELOPING:
+c rqlral: if true, try to read whole QLFP input at once; else read the 
+c     following radii when needed by Cyrano.     
+c
+c unqlfp: 
+c     unit number to read QLFP results
+c
+c nxgreg: 
+c     number of regions in x grid. Each region is a closed interval,
+c     i.e. has a left and a right boundary. This allows to repeat an 
+c     internal node by assigning it a region boundary.
+c
+c nvgreg: 
+c     number of regions in v grid.
+c
+c ielrx: number of finite elements in each x region.
+c
+c ielrv: number of finite elements in each v region.
+c
+c xngrid: list of node abscissae along Dirk's normalized x at current Cyrano abscissa. 
+c     Internal region boundaries must appear twice.
+c
+c vgrid: list of node abscissae along v at current Cyrano abscissa.
+c        Internal region boundaries must appear twice.
+c
+c F0: Table of distribution function finite element coefficients, to read
+c     from QLFP code. Dimensions correspond resp. to x mesh, v mesh, 
+c     radial mesh, 4 nodal parameters of Hermite bicubic, species
+c
+c F0i: Its interpolation on local Cyrano abscissa
+c
+c ngaux: order of Gaussian integration in x
+c
+c ngauv: order of Gaussian integration in v
+c
+c nabsx: number of abscissae in xngrid, counting the repetitions
+c
+c nabsv: number of abscissae in vgrid, counting the repetitions
+c
+c nraddr: number of magnetic surfaces in QLFP file
+c
+c bafgnx: basis functions at Gauss points in x. Indices correspond to 
+c         basis function, derivative (0 or 1), Gauss point
+c bafgnv: idem in v
+c
+c xngaug, vgaug: grids of Gaussian abscissae
+c
+c lxg, lvg: number of points on these grids

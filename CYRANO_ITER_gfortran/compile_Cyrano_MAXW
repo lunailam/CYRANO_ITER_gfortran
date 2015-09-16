@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rm Cyrano
+cd fortran_sources/MAXW/
+gfortran -pg -mcmodel=medium -O2 -fno-automatic -fdefault-real-8 -fdefault-double-8 -ffixed-line-length-132 -I../COMMONS/ -o Cyrano *.f
+cp -v Cyrano ../../Cyrano
+cd ../../
+exit 0
+
+
+
+
+

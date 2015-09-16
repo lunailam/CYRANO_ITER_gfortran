@@ -1,0 +1,54 @@
+c     Plasma parameters
+
+      logical 
+     ;  vacuum(maxreg), quasis, plstep(maxreg-1), coldpl(maxreg)
+     ;, glovac, glocol, glo0or, flrops(maxreg)
+     ;, sccol(maxreg), glomax, usenma
+     ;, res(-2:2), spres(-2:2,maxspe)
+     ;, spegdr(maxspe), relati(maxspe)
+     
+      character*10 paname(maxspe+1)
+
+      character*5 equidf(maxspe+1)
+
+      integer nspec, ispres
+     ;, ilaplreg
+     ;, nspgdr, ispgdr(maxspe), ispnod(maxspe)
+     ;, my_nspgdr, my_ispgdr(maxspe),  i_special(maxspe)
+
+      double precision 
+     ;  zch(maxspe), amass(maxspe), spefra(maxspe, maxreg)
+     ;, qom(maxspe)
+     ;, t0(maxspe, maxreg), tb(maxspe,maxreg)
+     ;, n0(maxspe,maxreg), nb(maxspe,maxreg)
+     ;, ninscr(maxspe), tinscr(maxspe)
+     ;, itexp(maxspe,maxreg), idexp(maxreg)
+     ;, vt(maxspe), omp(maxspe), temper(maxspe), densit(maxspe)
+     ;, vttab(nabplo,maxspe), omptab(nabplo,maxspe)
+     ;, temtab(nabplo,maxspe), dentab(nabplo,maxspe)
+     ;, jtor_tab(nabplo)
+     ;, vttab2(nabplo,maxspe), omptab2(nabplo,maxspe)
+     ;, temtab2(nabplo,maxspe), dentab2(nabplo,maxspe)
+     ;, damp(maxspe,maxreg)
+     ;, v0alph, udrift, POWERFAC, TOTALPOWER_poynt, SWcoef
+
+      complex*16 akperp
+
+      common/compla/
+     ;  zch, amass, spefra, qom
+     ;, t0, tb, n0, nb, ninscr, tinscr
+     ;, itexp, idexp
+     ;, vt, omp, temper, densit, SWcoef
+     ;, vttab, omptab, temtab, dentab, jtor_tab
+     ;, vttab2, omptab2, temtab2, dentab2
+     ;, damp, v0alph, udrift, POWERFAC, TOTALPOWER_poynt, akperp
+     ;, nspec, ispres
+     ;, ilaplreg
+     ;, nspgdr, ispgdr, ispnod, my_nspgdr, my_ispgdr, i_special
+     ;, flrops
+     ;, vacuum, glovac, glocol, glo0or, coldpl, quasis, plstep
+     ;, sccol, glomax, usenma, res, spres
+     ;, spegdr, relati
+     
+      common/compl2/paname, equidf
+

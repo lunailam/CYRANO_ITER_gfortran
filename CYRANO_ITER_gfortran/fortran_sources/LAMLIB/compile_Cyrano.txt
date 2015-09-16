@@ -1,0 +1,4 @@
+ealerche@FUJITSU:/WORK/ERN_stuff/TESTING/fortran_sources/LAMLIB$ gfortran -fno-
+automatic -fdefault-real-8 -fdefault-double-8 -ffixed-form -ffixed-line-length-
+132 -fno-align-commons -mcmodel=medium -I./COMMONS/ -lblas -llapack -o Cyrano *
+.f

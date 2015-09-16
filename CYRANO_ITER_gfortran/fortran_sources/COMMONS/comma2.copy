@@ -1,0 +1,10 @@
+c     Magnetic angle parameters
+
+      double precision 
+     ;  tgth, theta, co, si, co1, si1, tgthor
+     ;, cotab(nabplo), sitab(nabplo), co1tab(nabplo), si1tab(nabplo)
+
+      common /comma2/ 
+     ;  tgth, theta, co, si, co1, si1, tgthor
+     ;, cotab, sitab, co1tab, si1tab
+

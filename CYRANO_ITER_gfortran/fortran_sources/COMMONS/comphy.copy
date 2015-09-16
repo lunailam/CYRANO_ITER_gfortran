@@ -1,0 +1,13 @@
+c     Physical and numerical constants (initialized by data in main)
+
+      double precision  eel, me, mh, clight, eps0, mu0, dfac, tfac
+     ;    , fregag, omegag, k0, k02, k0rn2
+     ;    , pi, sqrt2, sqrt2i, sqrtpi, oopi, twopi
+
+      complex*16 czero, cun, ci, ctwo
+
+      common /comphy/ 
+     ;  fregag, omegag, k0, k02, k0rn2
+     ;, czero, cun, ci, ctwo, pi, sqrt2, sqrt2i, sqrtpi, oopi, twopi
+     ;, eel, me, mh, clight, eps0, mu0, dfac, tfac
+

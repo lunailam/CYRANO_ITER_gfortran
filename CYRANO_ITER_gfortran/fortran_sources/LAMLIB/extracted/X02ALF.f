@@ -1,0 +1,10 @@
+      DOUBLE PRECISION FUNCTION X02ALF()
+C     MARK 12 RELEASE. NAG COPYRIGHT 1986.
+C
+C     RETURNS  (1 - B**(-P)) * B**EMAX  (THE LARGEST POSITIVE MODEL
+C     NUMBER)
+C
+C     .. Executable Statements ..
+      X02ALF = (2.0D0**126 - 2.0D0**70) * 2.0D0
+      RETURN
+      END

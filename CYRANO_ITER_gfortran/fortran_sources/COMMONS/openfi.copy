@@ -1,0 +1,9 @@
+c     Open instruction for PC version of the code; replace by an empty
+c     line on the Cray.
+      open(unit=undirk
+     ;, file='RFforQLFP.txt'
+     ;, status='unknown')
+      open(unit=unbblo
+     ;, file='QLFP_bb.txt'
+     ;, status='unknown')
+c

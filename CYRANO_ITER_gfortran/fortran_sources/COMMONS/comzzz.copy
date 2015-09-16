@@ -1,0 +1,33 @@
+C
+C     Frontal block-tridiagonal solver internal common block
+C
+      INTEGER NAQP
+      PARAMETER( NAQP = 3 )
+
+      LOGICAL NEWFIL(2), NEWMAT(2), SCALE, SOLDOC
+
+      INTEGER NOFILE,UNIT(2)
+     ;       ,NPROBL(2),IPROBL(2),IPRDEF(MAXPRO,2),IPRDAT(MAXPRO,2)
+     ;       ,NGELIM,NRHS,NTHOMA,LBLOCK(MAXNBL),STORED,TSTORE
+     ;       ,BLORHS,ITHOMA,IBLK(2),IPVT(MAXBLL)
+     ;       ,AQP(NAQP,2),IWRI(2),IREA(2),NBLRD(2),NBLWR(2)
+     ;       ,LWK1,LWK2
+
+c     changed to solve array bound checking problem 17/7/97:
+c      PARAMETER( LWK1 = ((MAXPRO+2)/IOB2+1)*IOBLL
+c     ;         , LWK2 = ((MAXNBL+5)/IOBLL+1)*IOBLL )
+      PARAMETER( LWK1 = ((MAXPRO+2)/IOB2+2)*IOBLL
+     ;         , LWK2 = ((MAXNBL+5)/IOBLL+2)*IOBLL )
+
+      double precision
+     ;  TIMIN ,TIMSOL, TIMFAC
+     ;, WK1ZZZ(LWK1,2), WK2ZZZ(LWK2,2)
+
+      COMMON /COMZZZ/
+     ;               WK1ZZZ,WK2ZZZ
+     ;              ,TIMIN,TIMSOL,TIMFAC,NOFILE,UNIT
+     ;              ,NPROBL,IPROBL,IPRDEF,IPRDAT
+     ;              ,NGELIM,NRHS,NTHOMA,LBLOCK,TSTORE,BLORHS,STORED
+     ;              ,ITHOMA,IPVT,IBLK,AQP
+     ;              ,IWRI,IREA,NBLRD,NBLWR
+     ;              ,NEWFIL,NEWMAT,SCALE,SOLDOC

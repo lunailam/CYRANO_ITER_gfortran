@@ -1,0 +1,22 @@
+c     matrix product at current abscissa for rot.rot term
+
+      integer
+     ;  nns(nficom), nsi(nficom), nfaci(nficom)
+     ;, ins(6,nficom), isi(6,nficom)
+     ;, ifaci(nficom,2)
+
+      complex*16
+     ;  bc(6,6,0:maxgau), bch(6,6,0:maxgau)
+     ;, nat(6,6), nat2(6,6), nat2ax(6,6)
+     ;, bci(6,6,0:maxgau), bcih(6,6,0:maxgau)
+     ;, bc1(6*6*(maxgau+1)*2), bci1(6*6*(maxgau+1)*2), nat1(6*6*2)
+
+      equivalence 
+     ;  (bc(1,1,0),bc1), (bch(1,1,0),bc1(6*6*(maxgau+1)+1))
+     ;, (bci(1,1,0),bci1), (bcih(1,1,0),bci1(6*6*(maxgau+1)+1))
+     ;, (nat,nat1), (nat2,nat1(6*6+1))
+
+      common /comrot/ 
+     ;  bc1, bci1, nat1, nat2ax
+     ;, nns, nsi, nfaci, ins, isi, ifaci 
+

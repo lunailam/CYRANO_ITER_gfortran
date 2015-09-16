@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Sat Feb 04 20:34:02 2012
+        MODULE X04BAF__genmod
+          INTERFACE 
+            SUBROUTINE X04BAF(NOUT,REC)
+              INTEGER(KIND=4) :: NOUT
+              CHARACTER(*) :: REC
+            END SUBROUTINE X04BAF
+          END INTERFACE 
+        END MODULE X04BAF__genmod

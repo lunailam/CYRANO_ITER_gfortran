@@ -1,0 +1,27 @@
+
+      logical 
+     ;  scale, bulfce
+     ;, soldoc
+     ;, bandst, sparse, fulipi, hermit
+     ;, wrisol
+     ;, bcinb1, nabcap, stomat, recalc_total, onlyab, gensys, rawel1
+     ;, onlyab_now, recalc_by_species, recalc_by_species_now
+c     ;, recalc
+      integer 
+     ;  ngelim, nuca, nlca, kdia, mpvdd, mfilin, nrhs, nthoma
+     ;, lblock(maxnel+3*maxreg), stored, ishibc
+     ;, bccase
+     ;, i_last_plasma_block
+
+      complex*16 glofac
+
+      common /comequ/ 
+     ;  glofac
+     ;, ngelim, nuca, nlca, kdia, mpvdd, mfilin, nrhs, nthoma
+     ;, lblock, stored, ishibc, bccase, i_last_plasma_block
+     ;, scale, bandst, sparse, bulfce, fulipi, hermit
+     ;, soldoc
+     ;, wrisol
+     ;, bcinb1, nabcap
+     ;, stomat, recalc_total, onlyab, gensys, rawel1
+     ;, onlyab_now, recalc_by_species, recalc_by_species_now

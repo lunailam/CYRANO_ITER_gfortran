@@ -1,0 +1,7 @@
+      LOGICAL WRPLTA, WRIFOU
+      
+      integer nfouwr, ifouwr(ncorot)
+
+      COMMON /COMWRR/
+     ;  nfouwr, ifouwr
+     ;, WRPLTA, WRIFOU

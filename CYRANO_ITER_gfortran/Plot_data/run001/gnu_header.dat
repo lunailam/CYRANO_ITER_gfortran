@@ -1,0 +1,7 @@
+ Header file for GNUPLOT scripts
+ NSPEC, SPEC_names, rp, Ro, N, Rmin, Rmax
+           3
+ Electrons Deuterium Tritium   
+   2.8300000000000001     
+   8.5000000000000000     
+   32.000000000000000     

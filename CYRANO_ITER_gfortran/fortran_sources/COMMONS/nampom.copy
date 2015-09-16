@@ -1,0 +1,4 @@
+
+        NAMELIST /NAMPOM/
+     ;   MSTUD1,MSTUD2,MSTUST, dynmod, pollength
+

@@ -1,0 +1,41 @@
+c     mode expansion parameters
+
+      logical wbc3, dynmod
+
+      integer
+     ;  modva1, modva2, motov1, motov2, mstud1, mstud2, mstust
+     ;, ncrot, klim, nftnr, modax1, modax2, dynopt
+     ;, minf(0:maxnel), msup(0:maxnel), minfi, msupi, shift(maxnel+1)
+     ;, m, mpk, k, mr, mpkr, mav2
+     ;, nmode(0:maxnel)
+     ;, nk0(maxnel), nk1(maxnel), nkm(maxnel)
+     ;, ncresp
+cPL2004 not used globally:     ;, ncou
+c Bug found 5/4/2004: mave may be half integer!
+c     ;, mave
+ccc  ;, k1c(maxpom), k2c(maxpom), k1p(maxpom), k2p(maxpom)
+ 
+c     Caution: toroidal index N is declared real*8!
+c     5/4/2004 and average poloidal index MAVE too!
+ 
+      double precision 
+     ;  kphi, kprn, kprn2, kthe, n, kparze
+     ;, sl1(maxnel), sl2(maxnel), cores(maxnel)
+     ;, mave, pollength
+
+      common /commod/
+     ;  kphi, kprn, kprn2, kthe, n, kparze
+     ;, sl1, sl2, cores
+     ;, mave, pollength
+     ;, modva1, modva2, motov1, motov2, mstud1, mstud2, mstust
+     ;, ncrot, klim, nftnr, modax1, modax2, dynopt
+     ;, minf, msup, minfi, msupi, shift
+     ;, m, mpk, k, mr, mpkr, mav2
+     ;, nmode, nk0, nk1, nkm
+     ;, ncresp
+     ;, wbc3, dynmod
+
+cPL2004 ncou not used globally:     ;, ncou
+c (was after ncrot in common)
+
+ccc     ;, k1c, k2c, k1p, k2p

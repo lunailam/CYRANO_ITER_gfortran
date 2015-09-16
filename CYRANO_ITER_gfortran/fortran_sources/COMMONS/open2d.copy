@@ -1,0 +1,9 @@
+c     Open instruction for PC version of the code; replace by an empty
+c     line on the Cray.
+      open(unit=69
+     ;, file = paplda // 'R_Y', status='unknown')
+      open(unit=68
+     ;, file = paplda // '2D_B0StStn', status='unknown')
+      open(unit=67
+     ;, file = paplda // '2D_Tbpbmu', status='unknown')
+c

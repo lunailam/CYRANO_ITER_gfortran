@@ -1,0 +1,8 @@
+      NAMELIST/NAMOUT/
+     ;  KEEPSO, PLOOLD, NOLIFI, NOLOFI
+     ;, NUMDIS
+     ;, UNITGL, UNITRH, UNITEM
+     ;, REPLAY, DISTES
+     ;, WRIDAT, WRPLTA, WRIFOU, wrisol, nfouwr, ifouwr
+     ;, unqlfp, undirk, unbblo
+     ;, machin

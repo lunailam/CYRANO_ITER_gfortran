@@ -1,0 +1,32 @@
+C     Constant k// definitions
+
+      complex*16 ::  m12right (2*maxpom-1,2*maxcou+1),
+     ;               m12left  (2*maxpom-1,2*maxcou+1),
+     ;               m12landau(2*maxpom-1,2*maxcou+1),
+     ;               m12matrix(maxspe,2*maxpom-1,2*maxcou+1)
+
+c	  complex*16 ::  m12matrix(maxspe,2*maxpom-1,2*maxcou+1),
+c     ;               m12tab(2000,2*maxcou+1+1), 
+c     ;               cok_to_std(2*maxpom-1,2*maxpom-1)
+
+c	  integer :: Atab_size
+c	  real*8 :: Atab(2000)
+
+	  character(18) :: COKFOLDER
+	  character(21) :: TABFOLDER
+
+	  logical :: WRITE_REPORT, WRITE_SCREEN, WRITE_OUTPUT
+	  logical :: WRITE_TABLES, RESET_TABLES, READ_TABLES,
+     ;           ALLRAD_TABLES, ALLCOS_TABLES, FINEAA_TABLES
+      
+c      COMMON/COKPCO/m12right, m12left, m12landau, m12matrix,
+c     ;              m12tab, cok_to_std, Atab, Atab_size,
+c     ;              WRITE_REPORT, WRITE_SCREEN, WRITE_OUTPUT,
+c     ;              WRITE_TABLES, RESET_TABLES, READ_TABLES,
+c     ;              ALLRAD_TABLES, ALLCOS_TABLES, FINEAA_TABLES,
+c     ;              COKFOLDER, TABFOLDER
+      COMMON/COKPCO/m12right, m12left, m12landau, m12matrix,
+     ;              WRITE_REPORT, WRITE_SCREEN, WRITE_OUTPUT,
+     ;              WRITE_TABLES, RESET_TABLES, READ_TABLES,
+     ;              ALLRAD_TABLES, ALLCOS_TABLES, FINEAA_TABLES,
+     ;              COKFOLDER, TABFOLDER

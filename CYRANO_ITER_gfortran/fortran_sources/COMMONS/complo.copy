@@ -1,0 +1,83 @@
+c     plot parameters
+
+      character*50 ploleg(500)
+c      Moved into new common complp 1/4/04:
+c      character*40 paplda
+
+      logical
+     ;  ploold, plosol, ploana, plosta, ploeve, ploite, plot2d
+     ;, plot3d, plopow
+     ;, outez(3*nficom+5), outaez(2*nficom)
+     ;, oniter, losles, replay, distes, outgau, outnpft, spline
+     ;, reso(maxspe), resolh(maxreg), resohy
+     ;, ploty(3,9), poplty(8)
+
+      integer  
+     ;  ninter, nploth, niso, nkurv, ncomp
+     ;, istp(maxreg), istpplot(maxreg), ist11, istpe, istan
+     ;, nverad, nvepol
+     ;, ievec1, ievec2, ievest, iterp1, iterp2, iterps
+     ;, isy, isk, jsk, nfiell
+     ;, resord(maxspe), igrdev
+     ;, iglplo, no1dpl, ipla
+     ;, intaplot(nabplo), mroots(6*maxpom), nmoddisp
+
+      double precision        
+     ;  absr(nabplo), absout(nabplo), absdis(2*(maxnel+maxreg))
+     ;, absono(nabplo)
+     ;, abstom(nptosp), antosp(nptosp)
+     ;, abspro(2*(maxnel+maxreg)+1)
+     ;, absres(nppres), polplo(maxthp+1)
+     ;, absite(maxite), rminve, rmaxve
+     ;, yout(nabplo, 3*nficom+5)
+     ;, dpoydr(nabplo)
+     ;, powden(nabplo,maxspe+2,2)
+     ;, regpow(maxspe+1,3,maxreg)
+     ;, parpow(maxspe+1,2), tinpow, monorm(maxpom), ancplo(maxpom,2)
+     ;, roots(2*(maxnel+maxreg),9*maxpom)
+     ;, profil(2*(maxnel+maxreg),2*maxspe+2)
+     ;, splfac
+     ;, cyres(2*nppres,2,maxspe), lhres(nppres+1,2)
+     ;, hyres(2*nppres,2)
+     ;, xcm, ycm, xmin, xmax, ymin, ymax
+cPL not used:     ;, yana(nabplo,2*nficom)
+
+      double precision  
+     ;  el2no(nficom+1), erl2no(nficom+1)
+     ;, enorm(nabplo,nficom+1), ernorm(nabplo,nficom+1)
+     
+      complex*16 totpoy
+
+      common /complo/
+     ;  totpoy
+     ;, el2no, erl2no, enorm, ernorm
+     ;, absr
+     ;, absout, absdis, absono, abstom, antosp, abspro, absres, polplo
+     ;, absite, rminve, rmaxve
+     ;, yout, dpoydr, powden, regpow, parpow, tinpow, monorm, ancplo
+     ;, roots, profil
+     ;, splfac
+     ;, cyres, lhres, hyres
+     ;, xcm, ycm, xmin, xmax, ymin, ymax
+     ;, ninter, nploth, niso, nkurv, ncomp
+     ;, istp, istpplot, ist11, istpe, istan, nverad, nvepol
+     ;, ievec1, ievec2, ievest
+     ;, iterp1, iterp2, iterps
+     ;, isy, isk, jsk, nfiell
+     ;, resord, igrdev
+     ;, iglplo, no1dpl, ipla
+     ;, intaplot, mroots, nmoddisp
+     ;, ploold, plosol, ploana, plosta, ploeve, ploite, plot2d
+     ;, plot3d, plopow
+     ;, outez, outaez, oniter, losles, replay, distes
+     ;, outgau, spline, outnpft
+     ;, reso, resolh, resohy
+     ;, ploty, poplty
+     ;, ploleg
+ccc     ;, paplda
+cPL not used:     ;, yana
+	 
+	  double precision youth(nabplo,3*nficom)
+	  common /complh/ youth
+	  
+c istpe, istan : pour sol. analytique uniquement

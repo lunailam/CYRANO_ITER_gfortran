@@ -1,0 +1,15 @@
+C     PLASMA DATA
+
+      NAMELIST /NAMPLA/
+     ;  NSPEC, ZCH, AMASS, relati, isotro, maxwdr
+     ;, NSPGDR, ISPGDR, raqlfp, nraddr, rqlral
+     ;, T0, TB, ITEXP, N0, NB, SPEFRA, IDEXP
+     ;, VACUUM, DAMP, QUASIS, PLSTEP, COLDPL, FLROPS
+     ;, ISPRES, NHA, WALRES, CROWN
+     ;, my_nspgdr, my_ispgdr, i_special
+     ;
+     ;, V0ALPH, UDRIFT, EQUIDN, USENMA, CONCFAC
+     ;
+     ;, XBOU, RRATIO, PHILIM
+     ;, NINSCR, TINSCR
+     ;, SCCOL, SWcoef

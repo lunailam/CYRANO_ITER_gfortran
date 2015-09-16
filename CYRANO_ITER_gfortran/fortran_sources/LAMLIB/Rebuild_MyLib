@@ -1,0 +1,4 @@
+
+
+f90 -O -Mextend -Mbounds -I ../COMMONS -c $.f -lblas -llapack -lacml -lstd -lpgf90
+

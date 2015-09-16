@@ -1,0 +1,6 @@
+
+      NAMELIST /NAMMAG/
+     ;  B0, IPL, RHOCUR, ALPHA, NINTPS
+     ;, SHSH0, KAPPA, DELTA
+     ;, ishsht
+
