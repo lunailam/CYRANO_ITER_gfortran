@@ -308,7 +308,7 @@ c         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           coeff = damp(ispe,ireg) * 0.5 * eps0 * omp(ispe) ** 2
           dam2  = damp(ispe,ireg) ** 2
             if(dam2 .ne. 0)then
-            pic10 = pic10 + coeff * (
+            pic10 = coeff * (
      ;      dreal(zdotc(nmi2, pmder(7,1), 15, pmder(7,1), 15))
      ;      / ((omegag - omc) ** 2 + dam2 )
      ;    + dreal(zdotc(nmi2, pmder(15,1), 15, pmder(15,1), 15))
@@ -369,7 +369,7 @@ c	    Order 0:
 c	    -------
  
 c			0.1) Fundamental ion cyclotron damping:
-			pic10 = pic10 + coeff * ex(1) * fa(1,im)
+			pic10 = coeff * ex(1) * fa(1,im)
 
 c			0.2) Landau damping:
 			plan = plan + coeff * 2.d0 * xmu(0) ** 2 * ex(0) * fa(2,im)

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-rm Cyrano.exe
+rm Cyrano
 cd fortran_sources/MAXW/
-gfortran -pg -mcmodel=medium -O2 -fno-automatic -fdefault-real-8 -fdefault-double-8 -ffixed-line-length-132 -I../COMMONS/ -o Cyrano.exe *.f
+mpif90 -pg -mcmodel=medium -O2 -fno-automatic -fdefault-real-8 -fdefault-double-8 -ffixed-line-length-132 -I../COMMONS/ -o Cyrano.exe *.f
 cp -v Cyrano.exe ../../Cyrano
 cd ../../
 exit 0
