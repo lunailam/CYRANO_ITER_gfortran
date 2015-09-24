@@ -29,9 +29,8 @@ c     New, shortened version (1998) of sub. OUTPUT, free of graphics software.
       include 'comin2.copy'
       include 'comphy.copy'
       include 'coequi.copy'       
-      include 'mpif.h'
       logical onespe
-
+ 
       character*3  eletyp
       character*9  charfi(2), charco(6), charpa(3)
       character(100) :: GGs	!ERN
@@ -44,7 +43,7 @@ c     New, shortened version (1998) of sub. OUTPUT, free of graphics software.
      ;, is1, is2
      ;, ideca
      ;, idllo, icolo, ibulo, icpblo
-     ;, ie1, divproc, processo, rank, ierr
+     ;, ie1
      ;, ima, iblk, ireq, j1, j2, ispe, ib
      ;, istatu, ie2, nintma
      ;, minfc, nblk, ist
@@ -52,14 +51,13 @@ c     New, shortened version (1998) of sub. OUTPUT, free of graphics software.
      ;, nsum, i1st, ceilq
      ;, idamin, idmin, idmax
 
-      integer status(MPI_STATUS_SIZE)
       double precision 
      ;  rle
      ;, flipi, tabmin, tabmax, tabpoi, flh
      ;, dsum, cabs2, rveno
      ;, scpow, powquo(nabplo), pcheck
      ;, fac5, trav(maxthp+1,2), t(2), tt
-     ;, picm10, rm, pic10total
+     ;, picm10, rm
      ;, trapeze, gauss
 
 cERN	NEW: Store partial power contributions
@@ -333,41 +331,28 @@ cERN	RESET partial power contributions
 	aux_el2   = 0
       aux_ttmp  = 0
 	aux_ttmp2 = 0
-	
-cccccccccccccccccccccccccccc LUENNE ccccccccccccccccccccccccccccccccccc
-      call MPI_INIT ( ierr )
-      call MPI_COMM_RANK (MPI_COMM_WORLD, rank, ierr)
-      call MPI_COMM_SIZE (MPI_COMM_WORLD, processo, ierr)
-        
-	  divproc =  nploth/processo
-	   
-      do ipol = rank*(divproc) + 1, (rank+1)*divproc	  
+
+      do ipol = 1, nploth ! - - - - - - - - - - - - - - - - - - - - - - - 
+
 c		for dirty passing to powabs; intabp is passed as a plot point index:
-			intabp = ipol
-			bmodul = bmlvec(ipol)
-			r0or = r0rvec(ipol)
-			ror0 = 1.d0 / r0or
-            call zcopy(nmode(ielm), tabexp(ima,ipol), 1, copisi, 1)
-            if(.not.circ)then
-				si = siv(ipol)
-				co = cov(ipol)
-            end if
-			phi = polplo(ipol)
+		intabp = ipol
+		bmodul = bmlvec(ipol)
+		r0or = r0rvec(ipol)
+		ror0 = 1.d0 / r0or
+		call zcopy(nmode(ielm), tabexp(ima,ipol), 1, copisi, 1)
+		if(.not.circ)then
+			si = siv(ipol)
+			co = cov(ipol)
+		end if
+		phi = polplo(ipol)
 c write contrib of general diel. response and output for next step of qlfp
 c elsewhere!!!
-            
-            call powabs(i, onespe, ispe, .false.)
-		    call MPI_ALLREDUCE(pic10, pic10total, 1, MPI_DOUBLE_PRECISION, 
-     &      MPI_SUM, MPI_COMM_WORLD, ierr)
-			
-            call MPI_FINALIZE ( ierr )
-			
-			pic10 = pic10total
+		call powabs(i, onespe, ispe, .false.)
 c		tab(,,1) to give absorption to order 0 in lr;
 c		tab(,,2) to give absorption up to 2nd order in lr
 
 c		FLR0:
-			tab(ipol,i,1) = plan + pic10
+		tab(ipol,i,1) = plan + pic10
 c		tab(ipol,i,1) = plan + pic10 + psd + pcoda
 
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
@@ -376,86 +361,30 @@ cERN		tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp
 cERN	    05/03/05:	Checking FLR2 terms
 c		New variable pttmp2 (COMPOW.copy) for 2nd order FLR TTMP
 c		Special treatment for electrons (ispe=1)
-            if(ispe .eq. 1)then
+		if(ispe .eq. 1)then
 c		Pick-up desired terms (still explosion near axis)
-			     tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp + pttmp2 
-            else	
+		tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp + pttmp2 
+		else	
 c		Original expression (all terms)
-                 tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp + pttmp2 
-            end if
+		tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp + pttmp2 
+		end if
 
 c		times normalized volume element R/Ra * Jn: 
-			trav(ipol,1) = tab(ipol,i,1) * ror0 * eqt(intab,ipol,9)
-			trav(ipol,2) = tab(ipol,i,2) * ror0 * eqt(intab,ipol,9)
+		trav(ipol,1) = tab(ipol,i,1) * ror0 * eqt(intab,ipol,9)
+		trav(ipol,2) = tab(ipol,i,2) * ror0 * eqt(intab,ipol,9)
 
 cERN	Store partial power contributions (poloidal average)
-			aux_ic10  = aux_ic10  + pic10
-			aux_lan   = aux_lan   + plan
-			aux_ic2   = aux_ic2   + pic2
-			aux_ic11  = aux_ic11  + pic11
-			aux_ic12  = aux_ic12  + pic12
-			aux_el2   = aux_el2   + pel2
-			aux_ttmp  = aux_ttmp  + pttmp
-			aux_ttmp2 = aux_ttmp2 + pttmp2
-	  
-      end do
-
-cccccccccccccccccccccccccccc LUENNE ccccccccccccccccccccccccccccccccccc
-
-	
-c     do ipol = 1, nploth ! - - - - - - - - - - - - - - - - - - - - - - - 
-
-c		for dirty passing to powabs; intabp is passed as a plot point index:
-c		intabp = ipol
-c		bmodul = bmlvec(ipol)
-c		r0or = r0rvec(ipol)
-c		ror0 = 1.d0 / r0or
-c		call zcopy(nmode(ielm), tabexp(ima,ipol), 1, copisi, 1)
-c		if(.not.circ)then
-c			si = siv(ipol)
-c			co = cov(ipol)
-c		end if
-c		phi = polplo(ipol)
-c write contrib of general diel. response and output for next step of qlfp
-c elsewhere!!!
-c		call powabs(i, onespe, ispe, .false.)
-c		tab(,,1) to give absorption to order 0 in lr;
-c		tab(,,2) to give absorption up to 2nd order in lr
-
-c		FLR0:
-c		tab(ipol,i,1) = plan + pic10
-c		tab(ipol,i,1) = plan + pic10 + psd + pcoda
-
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-c		FLR2:
-cERN		tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp
-cERN	    05/03/05:	Checking FLR2 terms
-c		New variable pttmp2 (COMPOW.copy) for 2nd order FLR TTMP
-c		Special treatment for electrons (ispe=1)
-c		if(ispe .eq. 1)then
-c		Pick-up desired terms (still explosion near axis)
-c		tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp + pttmp2 
-c		else	
-c		Original expression (all terms)
-c		tab(ipol,i,2) = tab(ipol,i,1) + pic2 + pic11 + pic12 + pel2 + pttmp + pttmp2 
-c		end if
-
-c		times normalized volume element R/Ra * Jn: 
-c		trav(ipol,1) = tab(ipol,i,1) * ror0 * eqt(intab,ipol,9)
-c		trav(ipol,2) = tab(ipol,i,2) * ror0 * eqt(intab,ipol,9)
-
-cERN	Store partial power contributions (poloidal average)
-c	aux_ic10  = aux_ic10  + pic10
-c	aux_lan   = aux_lan   + plan
-c	aux_ic2   = aux_ic2   + pic2
-c	aux_ic11  = aux_ic11  + pic11
-c	aux_ic12  = aux_ic12  + pic12
-c	aux_el2   = aux_el2   + pel2
-c     aux_ttmp  = aux_ttmp  + pttmp
-c	aux_ttmp2 = aux_ttmp2 + pttmp2
+	aux_ic10  = aux_ic10  + pic10
+	aux_lan   = aux_lan   + plan
+	aux_ic2   = aux_ic2   + pic2
+	aux_ic11  = aux_ic11  + pic11
+	aux_ic12  = aux_ic12  + pic12
+	aux_el2   = aux_el2   + pel2
+      aux_ttmp  = aux_ttmp  + pttmp
+	aux_ttmp2 = aux_ttmp2 + pttmp2
 
 
-c      end do ! (ipol) - - - - - - - - - - - - - - - - - - - - - - - - - - 
+      end do ! (ipol) - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 c     "flux surface averaged" absorption [but using volume element!]: 
       powden(i,ispe,1) = powden(i,ispe,1) + dsum(nploth, trav, 1) * flipi
